@@ -1,0 +1,22 @@
+first/wildchat         n= 176  default    +2.3  unit16    +1.2  cost main   +2.1  PR   +0.3  diff   -1.2  cached differ 0
+first/smith            n=  60  default   -27.6  unit16   -58.4  cost main  +34.3  PR   +0.8  diff  -27.2  cached differ 0
+first/rebench          n=  36  default   -16.1  unit16   -36.4  cost main  +19.6  PR   -0.3  diff  -19.3  cached differ 0
+scored/wildchat/on     n= 420  default    +0.1  unit16    -1.5  cost main  +26.3  PR   +8.0  diff   -3.5  cached differ 2
+scored/wildchat/off    n= 420  default    +0.4  unit16    -0.3  cost main  +27.9  PR   +9.0  diff   -3.6  cached differ 8
+scored/smith/on        n= 544  default   -20.0  unit16   -34.9  cost main  +17.6  PR   -2.4  diff  -10.5  cached differ 10
+scored/smith/off       n= 443  default   -21.8  unit16   -34.8  cost main  +17.5  PR   -2.4  diff   -9.8  cached differ 28
+scored/rebench/on      n= 600  default   -21.8  unit16   -42.9  cost main  +16.3  PR   -9.7  diff  -18.2  cached differ 0
+scored/rebench/off     n= 599  default   -21.9  unit16   -42.4  cost main  +15.1  PR   -9.0  diff  -17.9  cached differ 0
+{
+ "F2_default_medians": {
+  "scored/smith/on": -19.96,
+  "scored/smith/off": -21.83,
+  "scored/rebench/on": -21.82,
+  "scored/rebench/off": -21.85
+ },
+ "F2_holds": true,
+ "F3a_cost_smaller_cells": 6,
+ "F3a_holds": true,
+ "F3b_cost_positive_cells": 2,
+ "F3b_holds": false
+}

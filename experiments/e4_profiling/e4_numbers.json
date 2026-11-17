@@ -1,0 +1,279 @@
+{
+ "sources": {
+  "q1": "q1_posthoc.json",
+  "q2": "q2_summary.json",
+  "q2b": "q2b_summary.json",
+  "q3": "q3_summary.json"
+ },
+ "q1_extra_step_prompt_560": {
+  "Qwen3.5-4B": {
+   "request_longer_ms": 45.2,
+   "gpu_busy_ms": 15.07,
+   "gpu_idle_ms": 30.11,
+   "ttft_plain_diff_ms": 37.62
+  },
+  "Qwen3.5-9B": {
+   "request_longer_ms": 42.21,
+   "gpu_busy_ms": 26.91,
+   "gpu_idle_ms": 15.57,
+   "ttft_plain_diff_ms": 28.71
+  }
+ },
+ "q2_roofline_l40_bf16_2560x9216": {
+  "plateau_ms_per_pass": 6.2114,
+  "plateau_weights_gb_per_s": 691.3,
+  "knee_tokens_per_step": 216.7,
+  "best_tflops": 96.594,
+  "fp32_over_bf16_at_1_token": 1.903
+ },
+ "q2_decode_context_16_gpu_busy_ms_per_step": {
+  "h4_C0": {
+   "1": 12.322,
+   "16": 15.822,
+   "64": 26.052
+  },
+  "fa_F0": {
+   "1": 12.159,
+   "16": 13.086,
+   "64": 16.128
+  }
+ },
+ "q2_decode_context_16_tokens_per_s": {
+  "h4_C0": {
+   "1": 77.8,
+   "16": 950.4,
+   "64": 2349.2
+  },
+  "fa_F0": {
+   "1": 80.5,
+   "16": 1166.8,
+   "64": 3763.3
+  }
+ },
+ "q2_verdicts": {
+  "S1_plateau_then_knee": true,
+  "S2_fp32_doubles_the_memory_bound_time": true,
+  "V1_decode_step_vs_batch/h4_C0": false,
+  "V1_decode_step_vs_batch/fa_F0": true
+ },
+ "q2b_decode_gpu_busy_ms_per_step": {
+  "h4_C0": {
+   "16": {
+    "1": 12.313,
+    "16": 15.784,
+    "64": 26.116
+   },
+   "577": {
+    "1": 12.342,
+    "16": 16.253,
+    "64": 27.74
+   },
+   "1153": {
+    "1": 12.485,
+    "16": 16.671,
+    "64": 29.523
+   },
+   "2305": {
+    "1": 12.65,
+    "16": 17.512,
+    "64": 32.8
+   }
+  },
+  "fa_F0": {
+   "16": {
+    "1": 12.169,
+    "16": 13.113,
+    "64": 16.118
+   },
+   "577": {
+    "1": 12.223,
+    "16": 15.128,
+    "64": 23.664
+   },
+   "1153": {
+    "1": 12.339,
+    "16": 16.984,
+    "64": 31.191
+   },
+   "2305": {
+    "1": 12.624,
+    "16": 20.678,
+    "64": 46.173
+   }
+  }
+ },
+ "q2b_decode_tokens_per_s": {
+  "h4_C0": {
+   "16": {
+    "1": 77.8,
+    "16": 966.4,
+    "64": 2347.5
+   },
+   "577": {
+    "1": 80.2,
+    "16": 955.4,
+    "64": 2236.4
+   },
+   "1153": {
+    "1": 79.2,
+    "16": 930.6,
+    "64": 2111.8
+   },
+   "2305": {
+    "1": 78.1,
+    "16": 884.4,
+    "64": 1899.0
+   }
+  },
+  "fa_F0": {
+   "16": {
+    "1": 80.5,
+    "16": 1169.1,
+    "64": 3792.5
+   },
+   "577": {
+    "1": 81.0,
+    "16": 1033.3,
+    "64": 2655.1
+   },
+   "1153": {
+    "1": 80.2,
+    "16": 920.8,
+    "64": 2025.4
+   },
+   "2305": {
+    "1": 78.3,
+    "16": 753.5,
+    "64": 1371.8
+   }
+  }
+ },
+ "q2b_verdicts": {
+  "L1_ratio_falls_with_context": {
+   "contexts": [
+    577,
+    1153,
+    2305
+   ],
+   "hybrid_over_full": [
+    1.172,
+    0.947,
+    0.71
+   ],
+   "holds": true
+  },
+  "L2_hybrid_faster_at_long_context": {
+   "ratio": 0.71,
+   "holds": true
+  },
+  "L3_hybrid_still_slower_at_577": {
+   "ratio": 1.172,
+   "holds": true
+  },
+  "L4_rise_with_context": {
+   "full_rise_ms": 22.509,
+   "hybrid_rise_ms": 5.06,
+   "hybrid_share": 0.225,
+   "holds": true
+  },
+  "L5_batch_1_flat": {
+   "full_ms": 0.401,
+   "hybrid_ms": 0.308,
+   "holds": true
+  },
+  "K1_clock_drops_under_sustained_compute": {
+   "clock_low_n_mhz": 2490,
+   "clock_high_n_mhz": 1441.3,
+   "high_over_low": 0.579,
+   "holds": true
+  }
+ },
+ "local_ncu_rtx5060_single_kernels": {
+  "decode": {
+   "n_kernels": 15,
+   "compute_throughput_pct_of_peak": 51.104982,
+   "memory_throughput_pct_of_peak": 75.842184,
+   "dram_bytes_read": 47225856.0,
+   "dram_read_gb_per_s": 263.1,
+   "l2_hit_rate_pct": 0.746687,
+   "kernel_duration_ms_under_ncu": 0.18
+  },
+  "prefill": {
+   "n_kernels": 15,
+   "compute_throughput_pct_of_peak": 90.133823,
+   "memory_throughput_pct_of_peak": 16.82831,
+   "dram_bytes_read": 53899520.0,
+   "dram_read_gb_per_s": 20.8,
+   "l2_hit_rate_pct": 88.139803,
+   "kernel_duration_ms_under_ncu": 2.594
+  },
+  "attention": {
+   "n_kernels": 3,
+   "compute_throughput_pct_of_peak": 70.633289,
+   "memory_throughput_pct_of_peak": 12.977254,
+   "dram_bytes_read": 8460288.0,
+   "dram_read_gb_per_s": 3.4,
+   "l2_hit_rate_pct": 95.336145,
+   "kernel_duration_ms_under_ncu": 2.455
+  }
+ },
+ "q3_two_gpus_nccl": {
+  "note": "two L40 over PCIe across NUMA nodes, --disable-custom-all-reduce, power limit 250 W; the Qwen3-4B trace is from the pass that failed in its last group (decode_64 has n = 2)",
+  "nccl_share_of_gpu_kernel_time": {
+   "Qwen3.5-4B": {
+    "prefill_512": 0.4951,
+    "prefill_2000": 0.4942,
+    "prefill_8000": 0.4865,
+    "decode_1": 0.0945,
+    "decode_16": 0.1739,
+    "decode_64": 0.2869
+   },
+   "Qwen3-4B": {
+    "prefill_512": 0.5384,
+    "prefill_2000": 0.5309,
+    "prefill_8000": 0.4713,
+    "decode_1": 0.0981,
+    "decode_16": 0.2199,
+    "decode_64": 0.3845
+   }
+  },
+  "two_gpu_over_one_gpu": {
+   "Qwen3.5-4B": {
+    "prefill_512": 0.635,
+    "prefill_2000": 0.705,
+    "prefill_8000": 0.62,
+    "decode_1": 0.608,
+    "decode_16": 0.668,
+    "decode_64": 0.717
+   },
+   "Qwen3-4B": {
+    "prefill_512": 1.076,
+    "prefill_2000": 0.73,
+    "prefill_8000": 0.606,
+    "decode_1": 0.635,
+    "decode_16": 0.718,
+    "decode_64": 0.857
+   }
+  },
+  "decode_64_tokens_per_s": {
+   "Qwen3.5-4B": {
+    "one_gpu": 2291.0,
+    "two_gpus": 3194.7
+   },
+   "Qwen3-4B": {
+    "one_gpu": 3651.9,
+    "two_gpus": 4259.6
+   }
+  },
+  "verdicts": {
+   "Qwen3.5-4B": {
+    "C1_nccl_share_decode_above_prefill": false,
+    "C2_two_gpus_do_not_speed_up_decode_by_a_quarter": false
+   },
+   "Qwen3-4B": {
+    "C1_nccl_share_decode_above_prefill": false,
+    "C2_two_gpus_do_not_speed_up_decode_by_a_quarter": false
+   }
+  }
+ }
+}

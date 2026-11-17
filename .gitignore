@@ -1,0 +1,22 @@
+__pycache__/
+*.pyc
+.pytest_cache/
+*.egg-info/
+build/
+.idea/
+.vscode/
+
+# run outputs and large inputs stay outside the repository
+runs/
+logs/
+artifacts/
+cache/
+envs/
+data/
+datasets/
+models/
+*.safetensors
+*.nsys-rep
+*.ncu-rep
+*.sqlite
+ncu_reports/

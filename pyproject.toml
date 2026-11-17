@@ -1,0 +1,23 @@
+[build-system]
+requires = ["setuptools>=64"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "hplab"
+version = "0.1.0"
+description = "Measurements of prefix caching for hybrid-attention models (Qwen3.5) on vLLM"
+readme = "README.en.md"
+license = { text = "Apache-2.0" }
+requires-python = ">=3.10"
+dependencies = ["numpy"]
+
+[project.optional-dependencies]
+# the replay clients and the dataset loaders
+replay = ["aiohttp", "transformers", "pyarrow"]
+test = ["pytest"]
+
+[tool.setuptools]
+packages = ["hplab"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]

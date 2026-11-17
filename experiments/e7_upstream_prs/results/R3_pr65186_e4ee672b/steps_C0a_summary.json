@@ -1,0 +1,29 @@
+{
+ "n": 319,
+ "same": 318,
+ "share_same": 0.9969,
+ "simulated_vs_measured": {
+  "1->1": 297,
+  "1->2": 1,
+  "2->2": 9,
+  "3->3": 4,
+  "4->4": 3,
+  "5->5": 1,
+  "6->6": 4
+ },
+ "measured_steps": {
+  "1": 297,
+  "2": 10,
+  "3": 4,
+  "4": 3,
+  "5": 1,
+  "6": 4
+ },
+ "requests": 319,
+ "prefill_iterations": 370,
+ "matched": 319,
+ "match_error": null,
+ "unit": 0,
+ "alignment": 64,
+ "rule": "66938"
+}

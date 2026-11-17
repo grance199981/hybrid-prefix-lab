@@ -1,0 +1,23 @@
+[
+ {
+  "stage": "L",
+  "workload": "smith",
+  "cfg": "C1",
+  "kv_mib": 9990,
+  "out": 16,
+  "seeds": 3,
+  "n": 895,
+  "retention": 1.0028,
+  "full": 0.966,
+  "zero": 0.0,
+  "above": 0.034,
+  "other": 0.0,
+  "recompute_median": 406,
+  "recompute_p90": 2117,
+  "ttft_median_ms": 401.6,
+  "preemptions": 0,
+  "usage_max": 0.339,
+  "errors": 0,
+  "wall_s": 179
+ }
+]

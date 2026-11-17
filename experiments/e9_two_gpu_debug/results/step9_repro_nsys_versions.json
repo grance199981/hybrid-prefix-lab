@@ -1,0 +1,155 @@
+{
+ "nsys@1": {
+  "status": "error",
+  "expect": "ok",
+  "exit_code": 11,
+  "return_codes": [
+   -6,
+   -15
+  ],
+  "stalled": false,
+  "started": "2026-11-17 21:35:41 CST",
+  "finished": "2026-11-17 21:37:18 CST",
+  "last_progress": [
+   "1808 1794922597.3",
+   "1808 1794922597.3"
+  ],
+  "steps": [
+   null,
+   null
+  ],
+  "groups": [
+   null,
+   null
+  ],
+  "mismatch_records": [
+   null,
+   null
+  ],
+  "errors": [
+   "no result file",
+   "no result file"
+  ],
+  "measured_seconds": [
+   null,
+   null
+  ],
+  "collectives": [
+   null,
+   null
+  ],
+  "config": {
+   "groups": 60,
+   "steps": 128,
+   "layers": 36,
+   "batch": 64,
+   "hidden": 2560,
+   "mlp": 4864,
+   "vocab": 75968,
+   "inject_step": -1,
+   "async_output": 1
+  }
+ },
+ "nsysnew@1": {
+  "status": "ok",
+  "expect": "ok",
+  "exit_code": 0,
+  "return_codes": [
+   0,
+   0
+  ],
+  "stalled": false,
+  "started": "2026-11-17 21:31:36 CST",
+  "finished": "2026-11-17 21:34:22 CST",
+  "last_progress": [
+   "7680 done",
+   "7680 done"
+  ],
+  "steps": [
+   7680,
+   7680
+  ],
+  "groups": [
+   60,
+   60
+  ],
+  "mismatch_records": [
+   0,
+   0
+  ],
+  "errors": [
+   null,
+   null
+  ],
+  "measured_seconds": [
+   144.63,
+   144.63
+  ],
+  "collectives": [
+   568320,
+   568320
+  ],
+  "config": {
+   "groups": 60,
+   "steps": 128,
+   "layers": 36,
+   "batch": 64,
+   "hidden": 2560,
+   "mlp": 4864,
+   "vocab": 75968,
+   "inject_step": -1,
+   "async_output": 1
+  }
+ },
+ "nsysnew@2": {
+  "status": "ok",
+  "expect": "ok",
+  "exit_code": 0,
+  "return_codes": [
+   0,
+   0
+  ],
+  "stalled": false,
+  "started": "2026-11-17 21:37:33 CST",
+  "finished": "2026-11-17 21:40:24 CST",
+  "last_progress": [
+   "7680 done",
+   "7680 done"
+  ],
+  "steps": [
+   7680,
+   7680
+  ],
+  "groups": [
+   60,
+   60
+  ],
+  "mismatch_records": [
+   0,
+   0
+  ],
+  "errors": [
+   null,
+   null
+  ],
+  "measured_seconds": [
+   147.72,
+   147.72
+  ],
+  "collectives": [
+   568320,
+   568320
+  ],
+  "config": {
+   "groups": 60,
+   "steps": 128,
+   "layers": 36,
+   "batch": 64,
+   "hidden": 2560,
+   "mlp": 4864,
+   "vocab": 75968,
+   "inject_step": -1,
+   "async_output": 1
+  }
+ }
+}

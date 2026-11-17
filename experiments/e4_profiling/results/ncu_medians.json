@@ -1,0 +1,149 @@
+{
+ "decode": {
+  "n_kernels": 15,
+  "kernel": "std::enable_if<!T7, void>::type internal::kernel<int, int, _",
+  "duration": 0.00018,
+  "duration_minmax": [
+   0.000177,
+   0.000183
+  ],
+  "compute_pct": 51.104982,
+  "compute_pct_minmax": [
+   50.327871,
+   52.049114
+  ],
+  "memory_pct": 75.842184,
+  "memory_pct_minmax": [
+   74.570469,
+   77.090619
+  ],
+  "dram_pct": 75.842184,
+  "dram_pct_minmax": [
+   74.570469,
+   77.090619
+  ],
+  "dram_read": 47225856.0,
+  "dram_read_minmax": [
+   47225600.0,
+   47266816.0
+  ],
+  "dram_read_rate": 263067380000.0,
+  "dram_read_rate_minmax": [
+   258732118000.0,
+   267501903000.00003
+  ],
+  "dram_write": 7424.0,
+  "dram_write_minmax": [
+   6656.0,
+   12032.0
+  ],
+  "l1_hit_pct": 33.170866,
+  "l1_hit_pct_minmax": [
+   33.153902,
+   33.181559
+  ],
+  "l2_hit_pct": 0.746687,
+  "l2_hit_pct_minmax": [
+   0.72439,
+   0.765098
+  ]
+ },
+ "prefill": {
+  "n_kernels": 15,
+  "kernel": "void cutlass::Kernel2<cutlass_80_tensorop_bf16_s16816gemm_re",
+  "duration": 0.002594,
+  "duration_minmax": [
+   0.002594,
+   0.002595
+  ],
+  "compute_pct": 90.133823,
+  "compute_pct_minmax": [
+   90.103607,
+   90.196681
+  ],
+  "memory_pct": 16.82831,
+  "memory_pct_minmax": [
+   16.822468,
+   16.840248
+  ],
+  "dram_pct": 7.374569,
+  "dram_pct_minmax": [
+   7.347882,
+   7.454825
+  ],
+  "dram_read": 53899520.0,
+  "dram_read_minmax": [
+   53655296.0,
+   54680832.0
+  ],
+  "dram_read_rate": 20774472000.0,
+  "dram_read_rate_minmax": [
+   20679921000.0,
+   21080645000.0
+  ],
+  "dram_write": 13281536.0,
+  "dram_write_minmax": [
+   13197056.0,
+   13548544.0
+  ],
+  "l1_hit_pct": 0.0,
+  "l1_hit_pct_minmax": [
+   0.0,
+   0.0
+  ],
+  "l2_hit_pct": 88.139803,
+  "l2_hit_pct_minmax": [
+   88.038201,
+   88.17411
+  ]
+ },
+ "attention": {
+  "n_kernels": 3,
+  "kernel": "fmha_cutlassF_bf16_aligned_64x128_rf_sm80(PyTorchMemEffAtten",
+  "duration": 0.002455,
+  "duration_minmax": [
+   0.002454,
+   0.002456
+  ],
+  "compute_pct": 70.633289,
+  "compute_pct_minmax": [
+   70.619159,
+   70.663289
+  ],
+  "memory_pct": 12.977254,
+  "memory_pct_minmax": [
+   12.974108,
+   12.982518
+  ],
+  "dram_pct": 0.986221,
+  "dram_pct_minmax": [
+   0.979693,
+   1.002796
+  ],
+  "dram_read": 8460288.0,
+  "dram_read_minmax": [
+   8441856.0,
+   8632320.0
+  ],
+  "dram_read_rate": 3447438000.0,
+  "dram_read_rate_minmax": [
+   3436611000.0,
+   3515842000.0
+  ],
+  "dram_write": 10752.0,
+  "dram_write_minmax": [
+   4608.0,
+   36096.0
+  ],
+  "l1_hit_pct": 0.0,
+  "l1_hit_pct_minmax": [
+   0.0,
+   0.0
+  ],
+  "l2_hit_pct": 95.336145,
+  "l2_hit_pct_minmax": [
+   95.313976,
+   95.336145
+  ]
+ }
+}

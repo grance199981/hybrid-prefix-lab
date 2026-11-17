@@ -1,0 +1,3 @@
+f6bfd0cb7006028bb56de638f80a0d54e5758d63795f95457d98f4d2454364cf *vllm/model_executor/layers/mamba/gdn/qwen_gdn_linear_attn.py
+c105ead259e86aedc248c53e7c4cef07034d0ff12da608d80265d1dd0990803f *vllm/third_party/flash_linear_attention/ops/chunk.py
+e900d52b8ab8e4479c21908176fd80b0ae6a4b8a194b213f02a029993d885d30 *vllm/third_party/flash_linear_attention/ops/chunk_delta_h.py

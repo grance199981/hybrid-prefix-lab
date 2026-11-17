@@ -1,0 +1,119 @@
+{
+ "M1_first_requests_not_cold": {
+  "n_first": 272,
+  "n_cold": 216,
+  "warm_by_dataset": {
+   "wildchat": 0,
+   "smith": 32,
+   "rebench": 24
+  }
+ },
+ "M1_first_requests_by_step_difference": {
+  "0": {
+   "n": 22,
+   "ttft_diff_median": -0.64,
+   "share_slower": 0.273,
+   "prompt_tokens_min_max": [
+    11,
+    16
+   ]
+  },
+  "1": {
+   "n": 194,
+   "ttft_diff_median": 29.68,
+   "share_slower": 0.969,
+   "prompt_tokens_min_max": [
+    17,
+    7939
+   ]
+  }
+ },
+ "M2_regression": {
+  "wildchat": {
+   "n": 1016,
+   "intercept_ms": -10.0016,
+   "ms_per_extra_step": 39.7988,
+   "ms_per_recomputed_token": -0.0059,
+   "r2": 0.582
+  },
+  "smith": {
+   "n": 1046,
+   "intercept_ms": 14.9819,
+   "ms_per_extra_step": 23.4687,
+   "ms_per_recomputed_token": 0.0065,
+   "r2": 0.386
+  },
+  "rebench": {
+   "n": 1235,
+   "intercept_ms": 25.707,
+   "ms_per_extra_step": 22.1128,
+   "ms_per_recomputed_token": 0.0136,
+   "r2": 0.245
+  }
+ },
+ "M3_by_step_difference": {
+  "wildchat": {
+   "0": {
+    "n": 33,
+    "ttft_diff_minus_recompute_term_median": -0.52
+   },
+   "1": {
+    "n": 930,
+    "ttft_diff_minus_recompute_term_median": 32.24
+   },
+   "2": {
+    "n": 53,
+    "ttft_diff_minus_recompute_term_median": 79.44
+   }
+  },
+  "smith": {
+   "0": {
+    "n": 16,
+    "ttft_diff_minus_recompute_term_median": 8.41
+   },
+   "1": {
+    "n": 803,
+    "ttft_diff_minus_recompute_term_median": 39.49
+   },
+   "2": {
+    "n": 227,
+    "ttft_diff_minus_recompute_term_median": 63.86
+   }
+  },
+  "rebench": {
+   "0": {
+    "n": 29,
+    "ttft_diff_minus_recompute_term_median": 13.39
+   },
+   "1": {
+    "n": 945,
+    "ttft_diff_minus_recompute_term_median": 49.0
+   },
+   "2": {
+    "n": 261,
+    "ttft_diff_minus_recompute_term_median": 71.31
+   }
+  }
+ },
+ "step_counts": {
+  "wildchat": {
+   "1->1": 22,
+   "1->2": 606,
+   "2->2": 11,
+   "2->3": 324,
+   "2->4": 53
+  },
+  "smith": {
+   "1->2": 324,
+   "2->2": 16,
+   "2->3": 479,
+   "2->4": 227
+  },
+  "rebench": {
+   "1->2": 339,
+   "2->2": 29,
+   "2->3": 606,
+   "2->4": 261
+  }
+ }
+}

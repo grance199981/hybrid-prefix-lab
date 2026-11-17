@@ -1,0 +1,28 @@
+# step 2
+fa_T2n_nsys.jsonl: 28 groups, 14 decode groups, incomplete: decode group 14 (0 of 8192 tokens)
+fa_T2n_plain.jsonl: 60 groups, 30 decode groups, incomplete: none
+# step 3
+fa_T2ns_nsys.jsonl: 16 groups, 8 decode groups, incomplete: decode group 8 (0 of 8192 tokens)
+fa_T2ns_plain.jsonl: 60 groups, 30 decode groups, incomplete: none
+# step 4
+fa_F0_nsys_gpu0.jsonl: 60 groups, 30 decode groups, incomplete: none
+fa_F0_nsys_gpu1.jsonl: 60 groups, 30 decode groups, incomplete: none
+fa_F0_plain_gpu0.jsonl: 60 groups, 30 decode groups, incomplete: none
+fa_F0_plain_gpu1.jsonl: 60 groups, 30 decode groups, incomplete: none
+# step 5
+fa_T2n_envonly.jsonl: 60 groups, 30 decode groups, incomplete: none
+fa_T2n_nsys.jsonl: 6 groups, 3 decode groups, incomplete: decode group 3 (0 of 8192 tokens)
+fa_T2n_nsyscuda.jsonl: 60 groups, 30 decode groups, incomplete: none
+fa_T2n_nsysidle.jsonl: 60 groups, 30 decode groups, incomplete: none
+fa_T2n_nsysnograph.jsonl: 60 groups, 30 decode groups, incomplete: none
+# step 6
+fa_T2n_nsys.jsonl: 30 groups, 15 decode groups, incomplete: decode group 15 (128 of 8192 tokens)
+fa_T2n_nsysc0.jsonl: 10 groups, 5 decode groups, incomplete: decode group 5 (0 of 8192 tokens)
+fa_T2n_nsysc1.jsonl: 16 groups, 8 decode groups, incomplete: decode group 8 (0 of 8192 tokens)
+# step 8
+fa_T2n_nsys.jsonl: 10 groups, 5 decode groups, incomplete: decode group 5 (0 of 8192 tokens)
+fa_T2n_nsysnoevent.jsonl: 6 groups, 3 decode groups, incomplete: decode group 3 (1152 of 8192 tokens)
+# step 10
+fa_T2n_nsys_old_run1.jsonl: 26 groups, 13 decode groups, incomplete: decode group 13 (0 of 8192 tokens)
+fa_T2n_nsysnew_run1.jsonl: 60 groups, 30 decode groups, incomplete: none
+fa_T2n_nsysnew_run2.jsonl: 60 groups, 30 decode groups, incomplete: none

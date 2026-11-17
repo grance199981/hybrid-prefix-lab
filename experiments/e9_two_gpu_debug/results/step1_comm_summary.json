@@ -1,0 +1,506 @@
+[
+ {
+  "group": "K",
+  "status": "mismatch",
+  "expect": "injected",
+  "exit_code": 0,
+  "transports": [
+   "SHM/direct"
+  ],
+  "steps": [
+   10,
+   10
+  ],
+  "collectives": 10,
+  "rate_bound_95": null,
+  "payload_gb_per_rank": 0.2,
+  "seconds": [
+   2.82,
+   3.24
+  ],
+  "mismatch_records": [
+   2,
+   2
+  ],
+  "errors": [
+   null,
+   null
+  ],
+  "started": "2026-11-17 12:51:39 CST",
+  "finished": "2026-11-17 12:51:44 CST",
+  "env": [
+   {
+    "CUDA_VISIBLE_DEVICES": "<gpu-uuid-0>,<gpu-uuid-1>",
+    "NCCL_DEBUG": "INFO",
+    "NCCL_P2P_DISABLE": "1"
+   },
+   {
+    "CUDA_VISIBLE_DEVICES": "<gpu-uuid-0>,<gpu-uuid-1>",
+    "NCCL_DEBUG": "INFO",
+    "NCCL_P2P_DISABLE": "1"
+   }
+  ],
+  "gpu": [
+   {
+    "name": "NVIDIA L40",
+    "uuid": "<gpu-uuid-0>",
+    "can_access_peer": true
+   },
+   {
+    "name": "NVIDIA L40",
+    "uuid": "<gpu-uuid-1>",
+    "can_access_peer": true
+   }
+  ],
+  "nccl": [
+   "2",
+   "30",
+   "7"
+  ],
+  "median_ms": {
+   "all_gather:1024": [
+    6.289,
+    2.301
+   ],
+   "all_gather:163840": [
+    5.286,
+    0.231
+   ],
+   "all_gather:1280000": [
+    1.791,
+    1.152
+   ],
+   "all_gather:4861952": [
+    4.633,
+    3.706
+   ],
+   "all_gather:20480000": [
+    19.906,
+    17.51
+   ],
+   "all_reduce:1024": [
+    322.102,
+    327.282
+   ],
+   "all_reduce:163840": [
+    0.502,
+    21.423
+   ],
+   "all_reduce:1280000": [
+    0.701,
+    1.227
+   ],
+   "all_reduce:4861952": [
+    11.302,
+    23.842
+   ],
+   "all_reduce:20480000": [
+    12.671,
+    14.609
+   ]
+  },
+  "mismatches": [
+   [
+    {
+     "step": 2,
+     "op": "all_reduce",
+     "n": 1280000,
+     "dtype": "float32",
+     "slot": null,
+     "n_diff": 1,
+     "first_index": 640000,
+     "got": [
+      89740.0,
+      97668.0,
+      105597.0,
+      113526.0
+     ],
+     "want": [
+      89739.0,
+      97668.0,
+      105597.0,
+      113526.0
+     ]
+    },
+    {
+     "step": 7,
+     "op": "all_gather",
+     "n": 1280000,
+     "dtype": "float32",
+     "slot": 1,
+     "n_diff": 1,
+     "first_index": 640000,
+     "got": [
+      13780.0,
+      21713.0,
+      29647.0,
+      37581.0
+     ],
+     "want": [
+      13779.0,
+      21713.0,
+      29647.0,
+      37581.0
+     ]
+    }
+   ],
+   [
+    {
+     "step": 2,
+     "op": "all_reduce",
+     "n": 1280000,
+     "dtype": "float32",
+     "slot": null,
+     "n_diff": 1,
+     "first_index": 640000,
+     "got": [
+      89740.0,
+      97668.0,
+      105597.0,
+      113526.0
+     ],
+     "want": [
+      89739.0,
+      97668.0,
+      105597.0,
+      113526.0
+     ]
+    },
+    {
+     "step": 7,
+     "op": "all_gather",
+     "n": 1280000,
+     "dtype": "float32",
+     "slot": 1,
+     "n_diff": 1,
+     "first_index": 640000,
+     "got": [
+      13780.0,
+      21713.0,
+      29647.0,
+      37581.0
+     ],
+     "want": [
+      13779.0,
+      21713.0,
+      29647.0,
+      37581.0
+     ]
+    }
+   ]
+  ]
+ },
+ {
+  "group": "A",
+  "status": "ok",
+  "expect": "ok",
+  "exit_code": 0,
+  "transports": [
+   "SHM/direct"
+  ],
+  "steps": [
+   27780,
+   27780
+  ],
+  "collectives": 27780,
+  "rate_bound_95": 0.00010799136069114471,
+  "payload_gb_per_rank": 595.3,
+  "seconds": [
+   239.92,
+   240.1
+  ],
+  "mismatch_records": [
+   0,
+   0
+  ],
+  "errors": [
+   null,
+   null
+  ],
+  "started": "2026-11-17 12:51:55 CST",
+  "finished": "2026-11-17 12:55:57 CST",
+  "env": [
+   {
+    "CUDA_VISIBLE_DEVICES": "<gpu-uuid-0>,<gpu-uuid-1>",
+    "NCCL_DEBUG": "INFO",
+    "NCCL_P2P_DISABLE": "1"
+   },
+   {
+    "CUDA_VISIBLE_DEVICES": "<gpu-uuid-0>,<gpu-uuid-1>",
+    "NCCL_DEBUG": "INFO",
+    "NCCL_P2P_DISABLE": "1"
+   }
+  ],
+  "gpu": [
+   {
+    "name": "NVIDIA L40",
+    "uuid": "<gpu-uuid-0>",
+    "can_access_peer": true
+   },
+   {
+    "name": "NVIDIA L40",
+    "uuid": "<gpu-uuid-1>",
+    "can_access_peer": true
+   }
+  ],
+  "nccl": [
+   "2",
+   "30",
+   "7"
+  ],
+  "median_ms": {
+   "all_gather:1024": [
+    0.692,
+    0.674
+   ],
+   "all_gather:163840": [
+    0.292,
+    0.274
+   ],
+   "all_gather:1280000": [
+    0.655,
+    0.653
+   ],
+   "all_gather:4861952": [
+    1.998,
+    2.008
+   ],
+   "all_gather:20480000": [
+    16.407,
+    16.41
+   ],
+   "all_reduce:1024": [
+    0.271,
+    0.301
+   ],
+   "all_reduce:163840": [
+    0.308,
+    0.308
+   ],
+   "all_reduce:1280000": [
+    0.647,
+    0.646
+   ],
+   "all_reduce:4861952": [
+    2.066,
+    2.091
+   ],
+   "all_reduce:20480000": [
+    16.32,
+    16.281
+   ]
+  },
+  "mismatches": [
+   [],
+   []
+  ]
+ },
+ {
+  "group": "B",
+  "status": "ok",
+  "expect": "ok",
+  "exit_code": 0,
+  "transports": [
+   "SHM/direct"
+  ],
+  "steps": [
+   27380,
+   27380
+  ],
+  "collectives": 27380,
+  "rate_bound_95": 0.0001095690284879474,
+  "payload_gb_per_rank": 586.7,
+  "seconds": [
+   240.21,
+   240.14
+  ],
+  "mismatch_records": [
+   0,
+   0
+  ],
+  "errors": [
+   null,
+   null
+  ],
+  "started": "2026-11-17 12:56:07 CST",
+  "finished": "2026-11-17 13:00:10 CST",
+  "env": [
+   {
+    "CUDA_VISIBLE_DEVICES": "<gpu-uuid-0>,<gpu-uuid-1>",
+    "NCCL_DEBUG": "INFO"
+   },
+   {
+    "CUDA_VISIBLE_DEVICES": "<gpu-uuid-0>,<gpu-uuid-1>",
+    "NCCL_DEBUG": "INFO"
+   }
+  ],
+  "gpu": [
+   {
+    "name": "NVIDIA L40",
+    "uuid": "<gpu-uuid-0>",
+    "can_access_peer": true
+   },
+   {
+    "name": "NVIDIA L40",
+    "uuid": "<gpu-uuid-1>",
+    "can_access_peer": true
+   }
+  ],
+  "nccl": [
+   "2",
+   "30",
+   "7"
+  ],
+  "median_ms": {
+   "all_gather:1024": [
+    0.93,
+    0.864
+   ],
+   "all_gather:163840": [
+    0.293,
+    0.323
+   ],
+   "all_gather:1280000": [
+    0.661,
+    0.66
+   ],
+   "all_gather:4861952": [
+    2.049,
+    2.064
+   ],
+   "all_gather:20480000": [
+    16.463,
+    16.458
+   ],
+   "all_reduce:1024": [
+    0.302,
+    0.305
+   ],
+   "all_reduce:163840": [
+    0.326,
+    0.326
+   ],
+   "all_reduce:1280000": [
+    0.655,
+    0.652
+   ],
+   "all_reduce:4861952": [
+    2.113,
+    2.111
+   ],
+   "all_reduce:20480000": [
+    16.36,
+    16.32
+   ]
+  },
+  "mismatches": [
+   [],
+   []
+  ]
+ },
+ {
+  "group": "C",
+  "status": "ok",
+  "expect": "ok",
+  "exit_code": 0,
+  "transports": [
+   "P2P/CUMEM"
+  ],
+  "steps": [
+   26940,
+   26940
+  ],
+  "collectives": 26940,
+  "rate_bound_95": 0.00011135857461024499,
+  "payload_gb_per_rank": 577.3,
+  "seconds": [
+   240.57,
+   240.57
+  ],
+  "mismatch_records": [
+   0,
+   0
+  ],
+  "errors": [
+   null,
+   null
+  ],
+  "started": "2026-11-17 13:00:20 CST",
+  "finished": "2026-11-17 13:04:23 CST",
+  "env": [
+   {
+    "CUDA_VISIBLE_DEVICES": "<gpu-uuid-0>,<gpu-uuid-1>",
+    "NCCL_DEBUG": "INFO",
+    "NCCL_P2P_LEVEL": "SYS"
+   },
+   {
+    "CUDA_VISIBLE_DEVICES": "<gpu-uuid-0>,<gpu-uuid-1>",
+    "NCCL_DEBUG": "INFO",
+    "NCCL_P2P_LEVEL": "SYS"
+   }
+  ],
+  "gpu": [
+   {
+    "name": "NVIDIA L40",
+    "uuid": "<gpu-uuid-0>",
+    "can_access_peer": true
+   },
+   {
+    "name": "NVIDIA L40",
+    "uuid": "<gpu-uuid-1>",
+    "can_access_peer": true
+   }
+  ],
+  "nccl": [
+   "2",
+   "30",
+   "7"
+  ],
+  "median_ms": {
+   "all_gather:1024": [
+    1.603,
+    1.261
+   ],
+   "all_gather:163840": [
+    0.389,
+    0.393
+   ],
+   "all_gather:1280000": [
+    0.71,
+    0.713
+   ],
+   "all_gather:4861952": [
+    2.287,
+    2.255
+   ],
+   "all_gather:20480000": [
+    16.943,
+    16.816
+   ],
+   "all_reduce:1024": [
+    0.384,
+    0.35
+   ],
+   "all_reduce:163840": [
+    0.335,
+    0.303
+   ],
+   "all_reduce:1280000": [
+    0.629,
+    0.622
+   ],
+   "all_reduce:4861952": [
+    2.08,
+    2.088
+   ],
+   "all_reduce:20480000": [
+    15.948,
+    15.908
+   ]
+  },
+  "mismatches": [
+   [],
+   []
+  ]
+ }
+]

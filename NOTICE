@@ -1,0 +1,14 @@
+hybrid-prefix-lab
+Copyright 2026 The hybrid-prefix-lab authors
+
+This product includes material from vLLM (https://github.com/vllm-project/vllm),
+licensed under the Apache License, Version 2.0, Copyright contributors to the vLLM project:
+
+  - experiments/e7_upstream_prs/patches/: the changes of vLLM pull requests #65186 and #66881,
+    applied to vLLM commit 1479deb0 to measure them.
+  - hplab/cache_model.py: count_steps and the functions it calls transcribe the prefill
+    splitting rule of vllm/v1/core/sched/scheduler.py and vllm/v1/kv_cache_interface.py
+    at commit 1479deb0.
+
+refs/ holds the chat templates published with the Qwen3.5-4B and Qwen3-4B models
+(Apache License 2.0, Copyright Alibaba Cloud / the Qwen team).

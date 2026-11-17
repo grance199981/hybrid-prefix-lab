@@ -1,0 +1,106 @@
+cell                                    n    hit% recomp med     p90  ttft p50  err
+C0/rebench/off/R/1                   1835   94.81      772.0    1963     315.2    0
+C0/rebench/off/R/8                   1835   94.81      772.0    1963     815.8    0
+C0/rebench/on/R/1                    1835   94.80      774.0    1961     322.2    0
+C0/rebench/on/R/8                    1835   94.80      774.0    1961     906.1    0
+C0/smith/off/R/1                     1709   92.00      711.0    2411     240.8    0
+C0/smith/off/R/8                     1709   92.00      711.0    2411     539.6    0
+C0/smith/on/R/1                      1709   92.02      709.0    2399     234.9    0
+C0/smith/on/R/8                      1709   92.02      709.0    2399     542.1    0
+C0/wildchat/off/R/1                  1269   56.01      534.0     950     124.1    0
+C0/wildchat/off/R/8                  1269   56.01      534.0     950     302.0    0
+C0/wildchat/on/R/1                   1269   56.09      532.0     948     124.4    0
+C0/wildchat/on/R/8                   1269   56.09      532.0     948     302.9    0
+C1/rebench/off/O/1                    659   96.94      333.0    1411       nan    0
+C1/rebench/off/R/1                   1835   96.16      462.0    1580     339.2    0
+C1/rebench/on/O/1                     637   96.85      345.0    1458       nan    0
+C1/rebench/on/R/1                    1835   96.16      460.0    1578     350.7    0
+C1/smith/off/O/1                      302   92.56      600.0    2969       nan    0
+C1/smith/off/R/1                     1709   93.72      446.0    2174     266.9    0
+C1/smith/on/O/1                       328   93.87      330.5    2535       nan    0
+C1/smith/on/R/1                      1709   93.89      418.0    2122     257.8    0
+C1/wildchat/off/O/1                   114   60.99      545.0    1024       nan    0
+C1/wildchat/off/R/1                  1269   70.31      315.0     707     147.8    0
+C1/wildchat/on/O/1                    114   63.90       49.0     391       nan    0
+C1/wildchat/on/R/1                   1269   72.34      293.0     669     147.7    0
+C2/rebench/off/R/1                   1835   94.85      761.0    1961     314.8    0
+C2/rebench/on/R/1                    1835   94.80      774.0    1961     316.8    0
+C2/smith/off/R/1                     1709   92.01      710.0    2401     233.4    0
+C2/smith/on/R/1                      1709   92.02      709.0    2399     235.4    0
+C2/wildchat/off/R/1                  1269   56.01      534.0     950     125.0    0
+C2/wildchat/on/R/1                   1269   56.09      532.0     948     124.6    0
+C3/rebench/off/R/1                   1835   96.16      461.0    1580     340.1    0
+C3/rebench/off/R/8                   1835   96.16      461.0    1580     858.9    0
+C3/rebench/on/R/1                    1835   96.16      460.0    1578     349.7    0
+C3/rebench/on/R/8                    1835   96.16      460.0    1578     921.8    0
+C3/smith/off/R/1                     1709   93.74      446.0    2143     266.4    0
+C3/smith/off/R/8                     1709   93.73      446.0    2143     585.4    0
+C3/smith/on/R/1                      1709   93.89      418.0    2122     264.2    0
+C3/smith/on/R/8                      1709   93.89      418.0    2122     578.2    0
+C3/wildchat/off/R/1                  1269   70.31      315.0     707     150.4    0
+C3/wildchat/off/R/8                  1269   70.31      315.0     707     311.1    0
+C3/wildchat/on/R/1                   1269   72.34      293.0     669     148.7    0
+C3/wildchat/on/R/8                   1269   72.34      293.0     669     309.9    0
+C4/rebench/off/O/1                    655   96.95      337.0    1388       nan    0
+C4/rebench/off/R/1                   1835   96.16      461.0    1580     339.3    0
+C4/rebench/on/O/1                     639   96.89      340.0    1423       nan    0
+C4/rebench/on/R/1                    1835   96.16      460.0    1578     349.8    0
+C4/smith/off/O/1                      302   93.16      477.0    2786       nan    0
+C4/smith/off/R/1                     1709   93.74      446.0    2143     268.6    0
+C4/smith/on/O/1                       328   93.91      323.5    2535       nan    0
+C4/smith/on/R/1                      1709   93.89      418.0    2122     264.1    0
+C4/wildchat/off/O/1                   114   60.99      545.0    1024       nan    0
+C4/wildchat/off/R/1                  1269   70.31      315.0     707     148.9    0
+C4/wildchat/on/O/1                    114   63.90       49.0     391       nan    0
+C4/wildchat/on/R/1                   1269   72.34      293.0     669     149.2    0
+F0/rebench/off/O/1                    696   96.93      357.0    1345       nan    0
+F0/rebench/off/R/1                   1955   96.16      466.0    1551     294.5    0
+F0/rebench/off/R/8                   1955   95.90      469.0    1622     996.6    0
+F0/rebench/on/O/1                     380   96.29      318.5    2009       nan    0
+F0/rebench/on/R/1                    1955   96.18      462.0    1547     245.0    0
+F0/rebench/on/R/8                    1955   95.97      465.0    1596     789.7    0
+F0/smith/off/O/1                      329   93.55      550.0    2420       nan    0
+F0/smith/off/R/1                     1749   93.89      414.0    2047     183.1    0
+F0/smith/off/R/8                     1749   93.89      414.0    2047     430.1    0
+F0/smith/on/O/1                       314   94.16      326.5    2374       nan    0
+F0/smith/on/R/1                      1749   93.91      410.0    2043     183.7    0
+F0/smith/on/R/8                      1749   93.91      410.0    2043     523.2    0
+F0/wildchat/off/O/1                   114   63.14      557.0     632       nan    0
+F0/wildchat/off/R/1                  1269   71.19      337.0     735      64.3    0
+F0/wildchat/off/R/8                  1269   71.19      337.0     735     201.1    0
+F0/wildchat/on/O/1                    114   60.15       90.0     284       nan    0
+F0/wildchat/on/R/1                   1269   71.40      333.0     731      72.9    0
+F0/wildchat/on/R/8                   1269   71.40      333.0     731     243.4    0
+F1/rebench/off/O/1                    662   97.26      265.5    1274       nan    0
+F1/rebench/off/R/1                   1949   96.23      463.0    1533     288.1    0
+F1/rebench/on/O/1                     375   96.30      314.0    2033       nan    0
+F1/rebench/on/R/1                    1949   96.21      469.0    1531     354.1    0
+F1/smith/off/O/1                      327   94.20      299.0    2367       nan    0
+F1/smith/off/R/1                     1747   93.89      414.0    2014     188.5    0
+F1/smith/on/O/1                       312   94.07      346.5    2353       nan    0
+F1/smith/on/R/1                      1747   93.90      414.0    2012     188.9    0
+F1/wildchat/off/O/1                   114   63.38      560.0     632       nan    0
+F1/wildchat/off/R/1                  1269   71.20      337.0     735      68.5    0
+F1/wildchat/on/O/1                    114   59.57       93.0     288       nan    0
+F1/wildchat/on/R/1                   1269   71.30      335.0     733      68.5    0
+== H2_F0 {"cfg": "F0", "per_cell": {"wildchat/on": 0.5279747832939322, "wildchat/off": 0.5279747832939322, "smith/on": 0.505431675242996, "smith/off": 0.505431675242996, "rebench/on": 0.5140664961636828, "rebench/off": 0.5140664961636828}, "pooled": 0.5145787251156244, "n": 9946, "holds": false}
+== H2_F1 {"cfg": "F1", "per_cell": {"wildchat/on": 0.5311268715524035, "wildchat/off": 0.5311268715524035, "smith/on": 0.5214653692043503, "smith/off": 0.529479107040641, "rebench/on": 0.48948178553104155, "rebench/off": 0.5320677270395074}, "pooled": 0.5211480362537765, "n": 9930, "holds": false}
+== H3_C0 {"pooled_equal_prev_checkpoint": 0.9987533762725951, "pooled_equal_with_fallback_rule": 1.0, "n": 9626, "holds": true}
+== H4 {"C1": {"cfg": "C1", "pooled": 1.0, "n_condition_met": 8969, "holds": true}, "C3": {"cfg": "C3", "pooled": 0.9966551455011707, "n_condition_met": 8969, "holds": true}, "C4": {"cfg": "C4", "pooled": 0.9966551455011707, "n_condition_met": 8969, "holds": true}}
+== H5 {"C1": {"cfg": "C1", "dataset": "wildchat", "per_thinking": {"on": {"n": 1269, "bad_share": 0.06855791962174941, "expected_share": 0.0625, "share_within_5pp": true, "bad_miss_frac": 1.0, "good_miss_frac": 0.0, "bad_recompute_median": 404, "good_recompute_median": 287.5, "bad_clearly_lower": true, "holds": true}, "off": {"n": 1269, "bad_share": 0.20803782505910165, "expected_share": 0.1875, "share_within_5pp": true, "bad_miss_frac": 1.0, "good_miss_frac": 0.0, "bad_recompute_median": 458.5, "good_recompute_median": 289, "bad_clearly_lower": true, "holds": true}}}, "C3": {"cfg": "C3", "dataset": "wildchat", "per_thinking": {"on": {"n": 1269, "bad_share": 0.06855791962174941, "expected_share": 0.0625, "share_within_5pp": true, "bad_miss_frac": 1.0, "good_miss_frac": 0.0, "bad_recompute_median": 404, "good_recompute_median": 287.5, "bad_clearly_lower": true, "holds": true}, "off": {"n": 1269, "bad_share": 0.20803782505910165, "expected_share": 0.1875, "share_within_5pp": true, "bad_miss_frac": 1.0, "good_miss_frac": 0.0, "bad_recompute_median": 458.5, "good_recompute_median": 289, "bad_clearly_lower": true, "holds": true}}}, "C4": {"cfg": "C4", "dataset": "wildchat", "per_thinking": {"on": {"n": 1269, "bad_share": 0.06855791962174941, "expected_share": 0.0625, "share_within_5pp": true, "bad_miss_frac": 1.0, "good_miss_frac": 0.0, "bad_recompute_median": 404, "good_recompute_median": 287.5, "bad_clearly_lower": true, "holds": true}, "off": {"n": 1269, "bad_share": 0.20803782505910165, "expected_share": 0.1875, "share_within_5pp": true, "bad_miss_frac": 1.0, "good_miss_frac": 0.0, "bad_recompute_median": 458.5, "good_recompute_median": 289, "bad_clearly_lower": true, "holds": true}}}}
+== H6 {"per_cell": {"F0/wildchat": {"n": 228, "frac_hit_past_prev_prompt": 0.0, "frac_D_past_prev_prompt": 0.0}, "F0/smith": {"n": 643, "frac_hit_past_prev_prompt": 0.17418351477449456, "frac_D_past_prev_prompt": 0.18973561430793157}, "F0/rebench": {"n": 1076, "frac_hit_past_prev_prompt": 0.31784386617100374, "frac_D_past_prev_prompt": 0.35315985130111527}, "F1/wildchat": {"n": 228, "frac_hit_past_prev_prompt": 0.0, "frac_D_past_prev_prompt": 0.0}, "F1/smith": {"n": 639, "frac_hit_past_prev_prompt": 0.3755868544600939, "frac_D_past_prev_prompt": 0.38810641627543035}, "F1/rebench": {"n": 1037, "frac_hit_past_prev_prompt": 0.6846673095467696, "frac_D_past_prev_prompt": 0.9662487945998072}, "C1/wildchat": {"n": 228, "frac_hit_past_prev_prompt": 0.0, "frac_D_past_prev_prompt": 0.0}, "C1/smith": {"n": 630, "frac_hit_past_prev_prompt": 0.0, "frac_D_past_prev_prompt": 0.4031746031746032}, "C1/rebench": {"n": 1296, "frac_hit_past_prev_prompt": 0.0, "frac_D_past_prev_prompt": 1.0}, "C4/wildchat": {"n": 228, "frac_hit_past_prev_prompt": 0.0, "frac_D_past_prev_prompt": 0.0}, "C4/smith": {"n": 630, "frac_hit_past_prev_prompt": 0.1761904761904762, "frac_D_past_prev_prompt": 0.4031746031746032}, "C4/rebench": {"n": 1294, "frac_hit_past_prev_prompt": 0.13137557959814528, "frac_D_past_prev_prompt": 1.0}}, "hybrid_never_past_prev_prompt": false, "F1_rebench_reaches_into_reply": true}
+== H9_C0 {"n": 9626, "n_bad_residue": 12, "bad_miss_frac": 1.0}
+== kill_criterion_1 full attention: F0 best hybrid: C1 {'C1': 397.0, 'C4': 397.0} complete: True triggered: True
+    {'dataset': 'wildchat', 'thinking': 'on', 'gap_pp_R': -0.947, 'ratio_R': 0.88, 'ratio_O': 0.544}
+    {'dataset': 'wildchat', 'thinking': 'off', 'gap_pp_R': 0.879, 'ratio_R': 0.935, 'ratio_O': 0.978}
+    {'dataset': 'smith', 'thinking': 'on', 'gap_pp_R': 0.029, 'ratio_R': 1.02, 'ratio_O': 1.012}
+    {'dataset': 'smith', 'thinking': 'off', 'gap_pp_R': 0.162, 'ratio_R': 1.077, 'ratio_O': 1.091}
+    {'dataset': 'rebench', 'thinking': 'on', 'gap_pp_R': 0.021, 'ratio_R': 0.996, 'ratio_O': 1.083}
+    {'dataset': 'rebench', 'thinking': 'off', 'gap_pp_R': 0.002, 'ratio_R': 0.991, 'ratio_O': 0.933}
+== F1_report_only full attention: F1 best hybrid: C1 {'C1': 397.0, 'C4': 397.0} complete: True triggered: False
+    {'dataset': 'wildchat', 'thinking': 'on', 'gap_pp_R': -1.044, 'ratio_R': 0.875, 'ratio_O': 0.527}
+    {'dataset': 'wildchat', 'thinking': 'off', 'gap_pp_R': 0.886, 'ratio_R': 0.935, 'ratio_O': 0.973}
+    {'dataset': 'smith', 'thinking': 'on', 'gap_pp_R': 0.012, 'ratio_R': 1.01, 'ratio_O': 0.954}
+    {'dataset': 'smith', 'thinking': 'off', 'gap_pp_R': 0.169, 'ratio_R': 1.077, 'ratio_O': 2.007}
+    {'dataset': 'rebench', 'thinking': 'on', 'gap_pp_R': 0.057, 'ratio_R': 0.981, 'ratio_O': 1.099}
+    {'dataset': 'rebench', 'thinking': 'off', 'gap_pp_R': 0.077, 'ratio_R': 0.998, 'ratio_O': 1.254}

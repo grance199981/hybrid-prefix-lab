@@ -1,0 +1,206 @@
+{
+ "control": {
+  "status": "mismatch",
+  "expect": "injected",
+  "exit_code": 0,
+  "return_codes": [
+   0,
+   0
+  ],
+  "stalled": false,
+  "started": "2026-11-17 19:55:10 CST",
+  "finished": "2026-11-17 19:55:33 CST",
+  "last_progress": [
+   "128 done",
+   "128 done"
+  ],
+  "steps": [
+   128,
+   128
+  ],
+  "groups": [
+   1,
+   1
+  ],
+  "mismatch_records": [
+   1,
+   1
+  ],
+  "errors": [
+   null,
+   null
+  ],
+  "measured_seconds": [
+   1.64,
+   1.65
+  ],
+  "collectives": [
+   9472,
+   9472
+  ],
+  "config": {
+   "groups": 2,
+   "steps": 128,
+   "layers": 36,
+   "batch": 64,
+   "hidden": 2560,
+   "mlp": 4864,
+   "vocab": 75968,
+   "inject_step": 5,
+   "async_output": 1
+  }
+ },
+ "nsys": {
+  "status": "error",
+  "expect": "ok",
+  "exit_code": 11,
+  "return_codes": [
+   -6,
+   -6
+  ],
+  "stalled": false,
+  "started": "2026-11-17 20:01:57 CST",
+  "finished": "2026-11-17 20:02:33 CST",
+  "last_progress": [
+   "672 1794916951.5",
+   "672 1794916951.5"
+  ],
+  "steps": [
+   null,
+   null
+  ],
+  "groups": [
+   null,
+   null
+  ],
+  "mismatch_records": [
+   null,
+   null
+  ],
+  "errors": [
+   "no result file",
+   "no result file"
+  ],
+  "measured_seconds": [
+   null,
+   null
+  ],
+  "collectives": [
+   null,
+   null
+  ],
+  "config": {
+   "groups": 60,
+   "steps": 128,
+   "layers": 36,
+   "batch": 64,
+   "hidden": 2560,
+   "mlp": 4864,
+   "vocab": 75968,
+   "inject_step": -1,
+   "async_output": 1
+  }
+ },
+ "nsysnograph": {
+  "status": "ok",
+  "expect": "ok",
+  "exit_code": 0,
+  "return_codes": [
+   0,
+   0
+  ],
+  "stalled": false,
+  "started": "2026-11-17 19:58:41 CST",
+  "finished": "2026-11-17 20:01:23 CST",
+  "last_progress": [
+   "7680 done",
+   "7680 done"
+  ],
+  "steps": [
+   7680,
+   7680
+  ],
+  "groups": [
+   60,
+   60
+  ],
+  "mismatch_records": [
+   0,
+   0
+  ],
+  "errors": [
+   null,
+   null
+  ],
+  "measured_seconds": [
+   139.42,
+   139.41
+  ],
+  "collectives": [
+   568320,
+   568320
+  ],
+  "config": {
+   "groups": 60,
+   "steps": 128,
+   "layers": 36,
+   "batch": 64,
+   "hidden": 2560,
+   "mlp": 4864,
+   "vocab": 75968,
+   "inject_step": -1,
+   "async_output": 1
+  }
+ },
+ "plain": {
+  "status": "ok",
+  "expect": "ok",
+  "exit_code": 0,
+  "return_codes": [
+   0,
+   0
+  ],
+  "stalled": false,
+  "started": "2026-11-17 19:55:44 CST",
+  "finished": "2026-11-17 19:58:30 CST",
+  "last_progress": [
+   "7680 done",
+   "7680 done"
+  ],
+  "steps": [
+   7680,
+   7680
+  ],
+  "groups": [
+   60,
+   60
+  ],
+  "mismatch_records": [
+   0,
+   0
+  ],
+  "errors": [
+   null,
+   null
+  ],
+  "measured_seconds": [
+   142.09,
+   142.09
+  ],
+  "collectives": [
+   568320,
+   568320
+  ],
+  "config": {
+   "groups": 60,
+   "steps": 128,
+   "layers": 36,
+   "batch": 64,
+   "hidden": 2560,
+   "mlp": 4864,
+   "vocab": 75968,
+   "inject_step": -1,
+   "async_output": 1
+  }
+ }
+}

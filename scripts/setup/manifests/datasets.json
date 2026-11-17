@@ -1,0 +1,123 @@
+{
+ "generated_from": "https://huggingface.co/api",
+ "assets": [
+  {
+   "kind": "datasets",
+   "repo": "nebius/SWE-rebench-openhands-trajectories",
+   "revision": "35455389ab51bf5e2306bfd436ef72d0f98bf882",
+   "local_dir": "data/swe-rebench-openhands",
+   "license": "cc-by-4.0",
+   "total_bytes": 2079554707,
+   "files": [
+    {
+     "path": "trajectories.parquet",
+     "size": 2079503354,
+     "sha256": "14048dd1fcd22ce094b6e85f8a38f223a9ef1327031aaaad052804870212efa1",
+     "git_blob_sha1": null
+    },
+    {
+     "path": "tools.json",
+     "size": 18512,
+     "sha256": null,
+     "git_blob_sha1": "acc11503ab8b2e4e87f4bfa5a15ddea424b6afe9"
+    },
+    {
+     "path": "config.toml",
+     "size": 7261,
+     "sha256": null,
+     "git_blob_sha1": "4da92df398744666a5d35bebd07937dd8097cdf4"
+    },
+    {
+     "path": "README.md",
+     "size": 6924,
+     "sha256": null,
+     "git_blob_sha1": "b0177ffe77f8a60d407991c281ad6bf9f6e65d02"
+    },
+    {
+     "path": "LICENSE",
+     "size": 18656,
+     "sha256": null,
+     "git_blob_sha1": "4ea99c213c5c0c005ae4e80df8e52169d06896ec"
+    }
+   ]
+  },
+  {
+   "kind": "datasets",
+   "repo": "SWE-bench/SWE-smith-trajectories",
+   "revision": "08e109b4a59eaeebf80e4675cd125d42e7ac99a4",
+   "local_dir": "data/swe-smith-trajectories",
+   "license": "mit",
+   "total_bytes": 77756233,
+   "files": [
+    {
+     "path": "data/tool-00004-of-00008.parquet",
+     "size": 77754558,
+     "sha256": "e41ffbd3f9d1571917ac5b9f4d0108ded4799d9776f597a054203467135a5715",
+     "git_blob_sha1": null
+    },
+    {
+     "path": "README.md",
+     "size": 1675,
+     "sha256": null,
+     "git_blob_sha1": "45c3393577f392756de3f08aced5cfd18b7c9fad"
+    }
+   ]
+  },
+  {
+   "kind": "datasets",
+   "repo": "allenai/WildChat-1M",
+   "revision": "7d6490e462285cf85d91eabea0f9a954fbddcd1f",
+   "local_dir": "data/wildchat-1m",
+   "license": "odc-by",
+   "total_bytes": 181005195,
+   "files": [
+    {
+     "path": "data/train-00008-of-00014.parquet",
+     "size": 180994027,
+     "sha256": "a69578183dde5de1aa94134da2d7c2d13f00d88a577ef91140a492fbbbf10792",
+     "git_blob_sha1": null
+    },
+    {
+     "path": "README.md",
+     "size": 11168,
+     "sha256": null,
+     "git_blob_sha1": "adfa80be3238ff8f9eecc2d5825994a50914c9c8"
+    }
+   ]
+  },
+  {
+   "kind": "models",
+   "repo": "Qwen/Qwen3-4B",
+   "revision": "1cfa9a7208912126459214e8b04321603b3df60c",
+   "local_dir": "models/Qwen3-4B-tokenizer",
+   "license": "apache-2.0",
+   "total_bytes": 15881072,
+   "files": [
+    {
+     "path": "tokenizer.json",
+     "size": 11422654,
+     "sha256": "aeb13307a71acd8fe81861d94ad54ab689df773318809eed3cbe794b4492dae4",
+     "git_blob_sha1": null
+    },
+    {
+     "path": "tokenizer_config.json",
+     "size": 9732,
+     "sha256": null,
+     "git_blob_sha1": "417d038a63fa3de29cfde265caedae14d1a58d92"
+    },
+    {
+     "path": "vocab.json",
+     "size": 2776833,
+     "sha256": null,
+     "git_blob_sha1": "4783fe10ac3adce15ac8f358ef5462739852c569"
+    },
+    {
+     "path": "merges.txt",
+     "size": 1671853,
+     "sha256": null,
+     "git_blob_sha1": "31349551d90c7606f325fe0f11bbb8bd5fa0d7c7"
+    }
+   ]
+  }
+ ]
+}

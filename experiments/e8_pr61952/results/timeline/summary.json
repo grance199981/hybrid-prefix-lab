@@ -1,0 +1,134 @@
+{
+ "base|h4_C0|16": {
+  "ttft": 94.6,
+  "wall": 86.7,
+  "busy": 16.1,
+  "kern": 713,
+  "gaps": 70.1,
+  "burst_busy": 51.0,
+  "nk": 1796,
+  "graph_launches": 34,
+  "launches": 336
+ },
+ "base|h4_C0|560": {
+  "ttft": 122.9,
+  "wall": 113.9,
+  "busy": 39.6,
+  "kern": 702,
+  "gaps": 73.6,
+  "burst_busy": 75.2,
+  "nk": 1796,
+  "graph_launches": 1,
+  "launches": 659
+ },
+ "base|h4_C1|16": {
+  "ttft": 96.4,
+  "wall": 88.5,
+  "busy": 16.1,
+  "kern": 713,
+  "gaps": 71.7,
+  "burst_busy": 51.0,
+  "nk": 1796,
+  "graph_launches": 34,
+  "launches": 336
+ },
+ "base|h4_C1|560": {
+  "ttft": 166.0,
+  "wall": 157.4,
+  "busy": 54.8,
+  "kern": 1365,
+  "gaps": 101.9,
+  "burst_busy": 90.1,
+  "nk": 2454,
+  "graph_launches": 34,
+  "launches": 994
+ },
+ "pr|h4_C0|16": {
+  "ttft": 155.1,
+  "wall": 146.8,
+  "busy": 133.2,
+  "kern": 1500,
+  "gaps": 12.8,
+  "burst_busy": 168.8,
+  "nk": 2605,
+  "graph_launches": 11,
+  "launches": 89
+ },
+ "pr|h4_C0|560": {
+  "ttft": 125.7,
+  "wall": 116.5,
+  "busy": 39.7,
+  "kern": 721,
+  "gaps": 76.1,
+  "burst_busy": 75.2,
+  "nk": 1813,
+  "graph_launches": 1,
+  "launches": 676
+ },
+ "pr|h4_C1|16": {
+  "ttft": 155.3,
+  "wall": 146.9,
+  "busy": 133.3,
+  "kern": 1500,
+  "gaps": 12.9,
+  "burst_busy": 168.9,
+  "nk": 2605,
+  "graph_launches": 11,
+  "launches": 89
+ },
+ "pr|h4_C1|560": {
+  "ttft": 261.8,
+  "wall": 251.5,
+  "busy": 172.0,
+  "kern": 2165,
+  "gaps": 78.7,
+  "burst_busy": 208.0,
+  "nk": 3280,
+  "graph_launches": 11,
+  "launches": 764
+ },
+ "pr8|h4_C0|16": {
+  "ttft": 44.3,
+  "wall": 36.2,
+  "busy": 21.8,
+  "kern": 1599,
+  "gaps": 13.7,
+  "burst_busy": 54.6,
+  "nk": 2605,
+  "graph_launches": 11,
+  "launches": 89
+ },
+ "pr8|h4_C0|560": {
+  "ttft": 125.3,
+  "wall": 116.2,
+  "busy": 39.7,
+  "kern": 721,
+  "gaps": 75.8,
+  "burst_busy": 75.2,
+  "nk": 1813,
+  "graph_launches": 1,
+  "launches": 676
+ },
+ "pr8|h4_C1|16": {
+  "ttft": 45.9,
+  "wall": 37.5,
+  "busy": 22.0,
+  "kern": 1601,
+  "gaps": 14.9,
+  "burst_busy": 54.6,
+  "nk": 2605,
+  "graph_launches": 11,
+  "launches": 89
+ },
+ "pr8|h4_C1|560": {
+  "ttft": 147.2,
+  "wall": 137.6,
+  "busy": 57.6,
+  "kern": 2154,
+  "gaps": 79.5,
+  "burst_busy": 93.9,
+  "nk": 3280,
+  "graph_launches": 11,
+  "launches": 764
+ }
+}

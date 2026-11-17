@@ -1,0 +1,350 @@
+{
+ "small_4B": {
+  "verdict": "confirmed",
+  "controls_pass": true,
+  "null_abs_max_ms": 1.59,
+  "inject_min_max_ms": [
+   28.41,
+   30.59
+  ],
+  "W1_same_steps": {
+   "n": 22,
+   "ttft_diff_median": 0.34,
+   "share_slower": 0.682,
+   "prompt_tokens_min_max": [
+    11,
+    16
+   ]
+  },
+  "W1_one_more_step": {
+   "n": 194,
+   "ttft_diff_median": 34.47,
+   "share_slower": 0.995,
+   "prompt_tokens_min_max": [
+    17,
+    7939
+   ]
+  },
+  "W2_slope_default_ms_per_token": {
+   "wildchat": [
+    0.0825,
+    0.0834
+   ],
+   "smith": [
+    0.0816,
+    0.0822
+   ],
+   "rebench": [
+    0.0804,
+    0.0815
+   ]
+  },
+  "W3_break_even_tokens": {
+   "wildchat": [
+    418,
+    413
+   ],
+   "smith": [
+    422,
+    419
+   ],
+   "rebench": [
+    429,
+    423
+   ]
+  },
+  "net_scored_ms": {
+   "scored/wildchat/on": {
+    "median": 31.88,
+    "share_slower": 0.957,
+    "saved_tokens": 192.0,
+    "n": 420
+   },
+   "scored/wildchat/off": {
+    "median": 32.99,
+    "share_slower": 0.974,
+    "saved_tokens": 176.0,
+    "n": 420
+   },
+   "scored/smith/on": {
+    "median": 27.48,
+    "share_slower": 0.961,
+    "saved_tokens": 288.0,
+    "n": 543
+   },
+   "scored/smith/off": {
+    "median": 31.65,
+    "share_slower": 0.966,
+    "saved_tokens": 256.0,
+    "n": 443
+   },
+   "scored/rebench/on": {
+    "median": 27.45,
+    "share_slower": 0.958,
+    "saved_tokens": 256.0,
+    "n": 600
+   },
+   "scored/rebench/off": {
+    "median": 28.19,
+    "share_slower": 0.958,
+    "saved_tokens": 256.0,
+    "n": 599
+   }
+  },
+  "first_ms": {
+   "first/wildchat": 34.61,
+   "first/smith": 32.97,
+   "first/rebench": 23.25
+  },
+  "step_groups_ms": {
+   "wildchat": {
+    "0": {
+     "n": 33,
+     "ttft_diff_minus_recompute_term_median": 0.15
+    },
+    "1": {
+     "n": 930,
+     "ttft_diff_minus_recompute_term_median": 34.63
+    },
+    "2": {
+     "n": 53,
+     "ttft_diff_minus_recompute_term_median": 73.36
+    }
+   },
+   "smith": {
+    "0": {
+     "n": 16,
+     "ttft_diff_minus_recompute_term_median": -1.64
+    },
+    "1": {
+     "n": 803,
+     "ttft_diff_minus_recompute_term_median": 33.78
+    },
+    "2": {
+     "n": 227,
+     "ttft_diff_minus_recompute_term_median": 58.3
+    }
+   },
+   "rebench": {
+    "0": {
+     "n": 29,
+     "ttft_diff_minus_recompute_term_median": 3.17
+    },
+    "1": {
+     "n": 945,
+     "ttft_diff_minus_recompute_term_median": 37.57
+    },
+    "2": {
+     "n": 261,
+     "ttft_diff_minus_recompute_term_median": 63.17
+    }
+   }
+  }
+ },
+ "large_9B": {
+  "verdict": "mixed",
+  "controls_pass": true,
+  "null_abs_max_ms": 8.07,
+  "inject_min_max_ms": [
+   26.56,
+   33.34
+  ],
+  "W1_same_steps": {
+   "n": 22,
+   "ttft_diff_median": 1.74,
+   "share_slower": 0.864,
+   "prompt_tokens_min_max": [
+    11,
+    16
+   ]
+  },
+  "W1_one_more_step": {
+   "n": 194,
+   "ttft_diff_median": 38.23,
+   "share_slower": 0.99,
+   "prompt_tokens_min_max": [
+    17,
+    7939
+   ]
+  },
+  "W2_slope_default_ms_per_token": {
+   "wildchat": [
+    0.1515,
+    0.1557
+   ],
+   "smith": [
+    0.1715,
+    0.1722
+   ],
+   "rebench": [
+    0.1669,
+    0.1675
+   ]
+  },
+  "W3_break_even_tokens": {
+   "wildchat": [
+    252,
+    246
+   ],
+   "smith": [
+    223,
+    222
+   ],
+   "rebench": [
+    229,
+    228
+   ]
+  },
+  "net_scored_ms": {
+   "scored/wildchat/on": {
+    "median": 26.02,
+    "share_slower": 0.802,
+    "saved_tokens": 192.0,
+    "n": 420
+   },
+   "scored/wildchat/off": {
+    "median": 27.61,
+    "share_slower": 0.764,
+    "saved_tokens": 176.0,
+    "n": 420
+   },
+   "scored/smith/on": {
+    "median": 13.36,
+    "share_slower": 0.653,
+    "saved_tokens": 288.0,
+    "n": 550
+   },
+   "scored/smith/off": {
+    "median": 15.79,
+    "share_slower": 0.65,
+    "saved_tokens": 256.0,
+    "n": 443
+   },
+   "scored/rebench/on": {
+    "median": 12.56,
+    "share_slower": 0.668,
+    "saved_tokens": 256.0,
+    "n": 600
+   },
+   "scored/rebench/off": {
+    "median": 8.65,
+    "share_slower": 0.589,
+    "saved_tokens": 256.0,
+    "n": 599
+   }
+  },
+  "first_ms": {
+   "first/wildchat": 38.54,
+   "first/smith": 28.29,
+   "first/rebench": 25.5
+  },
+  "step_groups_ms": {
+   "wildchat": {
+    "0": {
+     "n": 33,
+     "ttft_diff_minus_recompute_term_median": 1.97
+    },
+    "1": {
+     "n": 930,
+     "ttft_diff_minus_recompute_term_median": 39.41
+    },
+    "2": {
+     "n": 53,
+     "ttft_diff_minus_recompute_term_median": 50.75
+    }
+   },
+   "smith": {
+    "0": {
+     "n": 15,
+     "ttft_diff_minus_recompute_term_median": -4.69
+    },
+    "1": {
+     "n": 809,
+     "ttft_diff_minus_recompute_term_median": 36.48
+    },
+    "2": {
+     "n": 229,
+     "ttft_diff_minus_recompute_term_median": 57.71
+    }
+   },
+   "rebench": {
+    "0": {
+     "n": 29,
+     "ttft_diff_minus_recompute_term_median": -1.28
+    },
+    "1": {
+     "n": 945,
+     "ttft_diff_minus_recompute_term_median": 39.09
+    },
+    "2": {
+     "n": 261,
+     "ttft_diff_minus_recompute_term_median": 68.35
+    }
+   }
+  }
+ },
+ "W1": {
+  "holds": true,
+  "one_more_step_ms": 38.23,
+  "same_steps_ms": 1.74,
+  "n_same_steps": 22,
+  "small_model_ms": 34.47
+ },
+ "W2": {
+  "holds": true,
+  "large_min_max": [
+   0.1515,
+   0.1722
+  ],
+  "small_min_max": [
+   0.0804,
+   0.0834
+  ]
+ },
+ "W3": {
+  "large_min_max": [
+   222,
+   252
+  ],
+  "small_min_max": [
+   413,
+   429
+  ],
+  "holds": true
+ },
+ "W4": {
+  "holds": true,
+  "cells": {
+   "scored/wildchat/on": {
+    "small": 31.88,
+    "large": 26.02,
+    "large_is_lower": true
+   },
+   "scored/wildchat/off": {
+    "small": 32.99,
+    "large": 27.61,
+    "large_is_lower": true
+   },
+   "scored/smith/on": {
+    "small": 27.48,
+    "large": 13.36,
+    "large_is_lower": true
+   },
+   "scored/smith/off": {
+    "small": 31.65,
+    "large": 15.79,
+    "large_is_lower": true
+   },
+   "scored/rebench/on": {
+    "small": 27.45,
+    "large": 12.56,
+    "large_is_lower": true
+   },
+   "scored/rebench/off": {
+    "small": 28.19,
+    "large": 8.65,
+    "large_is_lower": true
+   }
+  }
+ }
+}
