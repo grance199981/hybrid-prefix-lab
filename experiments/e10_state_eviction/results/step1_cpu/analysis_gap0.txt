@@ -1,0 +1,4 @@
+192blocks_out16        n= 528 retention=0.0  zero= 528  state_only=0.619  both=0.381  first32_state_only=1.0  end_not_held=1.0  agree=0/576  controls=[None, None, None]  evict={'mamba': 3825, 'attn': 3279}
+192blocks_out256       n= 528 retention=0.0  zero= 528  state_only=0.915  both=0.085  first32_state_only=1.0  end_not_held=1.0  agree=0/576  controls=[None, None, None]  evict={'mamba': 4068, 'attn': 3261}
+288blocks_out16        n= 528 retention=0.6032  zero= 177  state_only=1.0  both=0.0  first32_state_only=1.0  end_not_held=1.0  agree=0/576  controls=[None, None, None]  evict={'mamba': 2901, 'attn': 1479}
+288blocks_out256       n= 528 retention=0.3845  zero= 270  state_only=1.0  both=0.0  first32_state_only=1.0  end_not_held=1.0  agree=0/576  controls=[None, None, None]  evict={'mamba': 3213, 'attn': 2115}

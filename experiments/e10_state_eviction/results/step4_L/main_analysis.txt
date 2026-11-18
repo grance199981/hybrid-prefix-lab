@@ -1,0 +1,3 @@
+﻿3330MiB_out16          n= 895 retention=0.2748  zero= 241  state_only=0.913  both=0.087  first32_state_only=0.885  short=662 short_state_only=0.837  end_not_held=1.0  agree=964/964  ambiguous=3  controls=[True, True, True]  evict={'mamba': 6449, 'attn': 10820}
+3830MiB_out16          n= 895 retention=0.6469  zero= 184  state_only=0.859  both=0.141  first32_state_only=0.781  short=303 short_state_only=0.875  end_not_held=1.0  agree=965/965  ambiguous=2  controls=[True, True, True]  evict={'mamba': 5357, 'attn': 6370}
+9990MiB_out16          n= 895 retention=1.0028  zero=   0  state_only=None  both=None  first32_state_only=None  short=0 short_state_only=None  end_not_held=1.0  agree=965/965  ambiguous=2  controls=[True, True, True]  evict={'mamba': 3841, 'attn': 1711}

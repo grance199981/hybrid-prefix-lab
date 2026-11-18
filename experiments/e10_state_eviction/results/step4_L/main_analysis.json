@@ -1,0 +1,602 @@
+{
+ "layout": {
+  "groups": [
+   "mamba",
+   "mamba",
+   "mamba",
+   "attn"
+  ],
+  "init": [
+   {
+    "ev": "init",
+    "scheduler": "AsyncScheduler",
+    "groups": [
+     "mamba",
+     "mamba",
+     "mamba",
+     "attn"
+    ],
+    "block_sizes": [
+     576,
+     576,
+     576,
+     576
+    ],
+    "num_blocks": 185,
+    "hash_block_size": 16,
+    "block_size": 576,
+    "max_num_batched_tokens": 2048,
+    "max_num_seqs": 32,
+    "async_scheduling": true,
+    "long_prefill_token_threshold": 0,
+    "policy": "fcfs",
+    "t": 1794965105255892102
+   }
+  ]
+ },
+ "cells": {
+  "3330MiB_out16": {
+   "files": 3,
+   "n": 895,
+   "retention": 0.2748,
+   "zero": 241,
+   "short": 662,
+   "matched": 964,
+   "agree": 964,
+   "ambiguous": 3,
+   "share_short_state_only": 0.837,
+   "share_state_only": 0.913,
+   "share_both": 0.087,
+   "first32_state_only": 0.885,
+   "end_not_held": 1.0,
+   "controls_ok": [
+    true,
+    true,
+    true
+   ],
+   "classes": {
+    "state_only": 220,
+    "both": 21
+   },
+   "short_classes": {
+    "state_only": 554,
+    "both": 106,
+    "unmatched": 2
+   },
+   "first32": {
+    "state_only": 85,
+    "both": 11
+   },
+   "end": {
+    "free_queue": 794,
+    "gone": 170
+   },
+   "evict": {
+    "mamba": 6449,
+    "attn": 10820
+   }
+  },
+  "3830MiB_out16": {
+   "files": 3,
+   "n": 895,
+   "retention": 0.6469,
+   "zero": 184,
+   "short": 303,
+   "matched": 965,
+   "agree": 965,
+   "ambiguous": 2,
+   "share_short_state_only": 0.875,
+   "share_state_only": 0.859,
+   "share_both": 0.141,
+   "first32_state_only": 0.781,
+   "end_not_held": 1.0,
+   "controls_ok": [
+    true,
+    true,
+    true
+   ],
+   "classes": {
+    "state_only": 158,
+    "both": 26
+   },
+   "short_classes": {
+    "state_only": 265,
+    "both": 37,
+    "unmatched": 1
+   },
+   "first32": {
+    "state_only": 75,
+    "both": 21
+   },
+   "end": {
+    "free_queue": 859,
+    "gone": 106
+   },
+   "evict": {
+    "mamba": 5357,
+    "attn": 6370
+   }
+  },
+  "9990MiB_out16": {
+   "files": 3,
+   "n": 895,
+   "retention": 1.0028,
+   "zero": 0,
+   "short": 0,
+   "matched": 965,
+   "agree": 965,
+   "ambiguous": 2,
+   "share_short_state_only": null,
+   "share_state_only": null,
+   "share_both": null,
+   "first32_state_only": null,
+   "end_not_held": 1.0,
+   "controls_ok": [
+    true,
+    true,
+    true
+   ],
+   "classes": {},
+   "short_classes": {},
+   "first32": {},
+   "end": {
+    "free_queue": 965
+   },
+   "evict": {
+    "mamba": 3841,
+    "attn": 1711
+   }
+  }
+ },
+ "files": [
+  {
+   "label": "C1_L_smith_kv3330_out16_seed1",
+   "n_sessions_seen": 24,
+   "n": 249,
+   "matched": 271,
+   "agree": 271,
+   "ambiguous": 2,
+   "hit": 410080,
+   "pred": 1847200,
+   "zero": 70,
+   "short": 194,
+   "classes": {
+    "state_only": 67,
+    "both": 3
+   },
+   "short_classes": {
+    "state_only": 180,
+    "both": 12,
+    "unmatched": 2
+   },
+   "first32": {
+    "state_only": 29,
+    "both": 3
+   },
+   "end": {
+    "free_queue": 205,
+    "gone": 66
+   },
+   "evict": {
+    "mamba": 1875,
+    "attn": 3031
+   },
+   "controls": {
+    "A": {
+     "hit": 0,
+     "client": 0,
+     "attn": 0,
+     "state": 0
+    },
+    "A_again": {
+     "hit": 1488,
+     "client": 1488,
+     "attn": 1488,
+     "state": 1488
+    },
+    "B": {
+     "hit": 0,
+     "client": 0,
+     "attn": 0,
+     "state": 0
+    }
+   },
+   "retention": 0.222
+  },
+  {
+   "label": "C1_L_smith_kv3330_out16_seed2",
+   "n_sessions_seen": 24,
+   "n": 327,
+   "matched": 350,
+   "agree": 350,
+   "ambiguous": 1,
+   "hit": 854032,
+   "pred": 2550112,
+   "zero": 120,
+   "short": 231,
+   "classes": {
+    "state_only": 106,
+    "both": 14
+   },
+   "short_classes": {
+    "state_only": 199,
+    "both": 32
+   },
+   "first32": {
+    "state_only": 27,
+    "both": 5
+   },
+   "end": {
+    "free_queue": 275,
+    "gone": 75
+   },
+   "evict": {
+    "mamba": 2327,
+    "attn": 3618
+   },
+   "controls": {
+    "A": {
+     "hit": 0,
+     "client": 0,
+     "attn": 0,
+     "state": 0
+    },
+    "A_again": {
+     "hit": 1488,
+     "client": 1488,
+     "attn": 1488,
+     "state": 1488
+    },
+    "B": {
+     "hit": 0,
+     "client": 0,
+     "attn": 0,
+     "state": 0
+    }
+   },
+   "retention": 0.3349
+  },
+  {
+   "label": "C1_L_smith_kv3330_out16_seed3",
+   "n_sessions_seen": 24,
+   "n": 319,
+   "matched": 343,
+   "agree": 343,
+   "ambiguous": 0,
+   "hit": 689152,
+   "pred": 2711552,
+   "zero": 51,
+   "short": 237,
+   "classes": {
+    "state_only": 47,
+    "both": 4
+   },
+   "short_classes": {
+    "state_only": 175,
+    "both": 62
+   },
+   "first32": {
+    "state_only": 29,
+    "both": 3
+   },
+   "end": {
+    "free_queue": 314,
+    "gone": 29
+   },
+   "evict": {
+    "mamba": 2247,
+    "attn": 4171
+   },
+   "controls": {
+    "A": {
+     "hit": 0,
+     "client": 0,
+     "attn": 0,
+     "state": 0
+    },
+    "A_again": {
+     "hit": 1488,
+     "client": 1488,
+     "attn": 1488,
+     "state": 1488
+    },
+    "B": {
+     "hit": 0,
+     "client": 0,
+     "attn": 0,
+     "state": 0
+    }
+   },
+   "retention": 0.2542
+  },
+  {
+   "label": "C1_L_smith_kv3830_out16_seed1",
+   "n_sessions_seen": 24,
+   "n": 249,
+   "matched": 272,
+   "agree": 272,
+   "ambiguous": 1,
+   "hit": 1349392,
+   "pred": 1847200,
+   "zero": 46,
+   "short": 77,
+   "classes": {
+    "state_only": 43,
+    "both": 3
+   },
+   "short_classes": {
+    "state_only": 72,
+    "both": 4,
+    "unmatched": 1
+   },
+   "first32": {
+    "state_only": 29,
+    "both": 3
+   },
+   "end": {
+    "free_queue": 233,
+    "gone": 39
+   },
+   "evict": {
+    "mamba": 1466,
+    "attn": 1457
+   },
+   "controls": {
+    "A": {
+     "hit": 0,
+     "client": 0,
+     "attn": 0,
+     "state": 0
+    },
+    "A_again": {
+     "hit": 1488,
+     "client": 1488,
+     "attn": 1488,
+     "state": 1488
+    },
+    "B": {
+     "hit": 0,
+     "client": 0,
+     "attn": 0,
+     "state": 0
+    }
+   },
+   "retention": 0.7305
+  },
+  {
+   "label": "C1_L_smith_kv3830_out16_seed2",
+   "n_sessions_seen": 24,
+   "n": 327,
+   "matched": 350,
+   "agree": 350,
+   "ambiguous": 1,
+   "hit": 1874416,
+   "pred": 2550112,
+   "zero": 54,
+   "short": 83,
+   "classes": {
+    "state_only": 47,
+    "both": 7
+   },
+   "short_classes": {
+    "state_only": 73,
+    "both": 10
+   },
+   "first32": {
+    "state_only": 27,
+    "both": 5
+   },
+   "end": {
+    "free_queue": 319,
+    "gone": 31
+   },
+   "evict": {
+    "mamba": 1884,
+    "attn": 1895
+   },
+   "controls": {
+    "A": {
+     "hit": 0,
+     "client": 0,
+     "attn": 0,
+     "state": 0
+    },
+    "A_again": {
+     "hit": 1488,
+     "client": 1488,
+     "attn": 1488,
+     "state": 1488
+    },
+    "B": {
+     "hit": 0,
+     "client": 0,
+     "attn": 0,
+     "state": 0
+    }
+   },
+   "retention": 0.735
+  },
+  {
+   "label": "C1_L_smith_kv3830_out16_seed3",
+   "n_sessions_seen": 24,
+   "n": 319,
+   "matched": 343,
+   "agree": 343,
+   "ambiguous": 0,
+   "hit": 1374976,
+   "pred": 2711552,
+   "zero": 84,
+   "short": 143,
+   "classes": {
+    "state_only": 68,
+    "both": 16
+   },
+   "short_classes": {
+    "state_only": 120,
+    "both": 23
+   },
+   "first32": {
+    "state_only": 19,
+    "both": 13
+   },
+   "end": {
+    "free_queue": 307,
+    "gone": 36
+   },
+   "evict": {
+    "mamba": 2007,
+    "attn": 3018
+   },
+   "controls": {
+    "A": {
+     "hit": 0,
+     "client": 0,
+     "attn": 0,
+     "state": 0
+    },
+    "A_again": {
+     "hit": 1488,
+     "client": 1488,
+     "attn": 1488,
+     "state": 1488
+    },
+    "B": {
+     "hit": 0,
+     "client": 0,
+     "attn": 0,
+     "state": 0
+    }
+   },
+   "retention": 0.5071
+  },
+  {
+   "label": "C1_L_smith_kv9990_out16_seed1",
+   "n_sessions_seen": 24,
+   "n": 249,
+   "matched": 272,
+   "agree": 272,
+   "ambiguous": 1,
+   "hit": 1852528,
+   "pred": 1847200,
+   "zero": 0,
+   "short": 0,
+   "classes": {},
+   "short_classes": {},
+   "first32": {},
+   "end": {
+    "free_queue": 272
+   },
+   "evict": {
+    "mamba": 1061,
+    "attn": 487
+   },
+   "controls": {
+    "A": {
+     "hit": 0,
+     "client": 0,
+     "attn": 0,
+     "state": 0
+    },
+    "A_again": {
+     "hit": 1488,
+     "client": 1488,
+     "attn": 1488,
+     "state": 1488
+    },
+    "B": {
+     "hit": 0,
+     "client": 0,
+     "attn": 0,
+     "state": 0
+    }
+   },
+   "retention": 1.0029
+  },
+  {
+   "label": "C1_L_smith_kv9990_out16_seed2",
+   "n_sessions_seen": 24,
+   "n": 327,
+   "matched": 350,
+   "agree": 350,
+   "ambiguous": 1,
+   "hit": 2555760,
+   "pred": 2550112,
+   "zero": 0,
+   "short": 0,
+   "classes": {},
+   "short_classes": {},
+   "first32": {},
+   "end": {
+    "free_queue": 350
+   },
+   "evict": {
+    "mamba": 1418,
+    "attn": 627
+   },
+   "controls": {
+    "A": {
+     "hit": 0,
+     "client": 0,
+     "attn": 0,
+     "state": 0
+    },
+    "A_again": {
+     "hit": 1488,
+     "client": 1488,
+     "attn": 1488,
+     "state": 1488
+    },
+    "B": {
+     "hit": 0,
+     "client": 0,
+     "attn": 0,
+     "state": 0
+    }
+   },
+   "retention": 1.0022
+  },
+  {
+   "label": "C1_L_smith_kv9990_out16_seed3",
+   "n_sessions_seen": 24,
+   "n": 319,
+   "matched": 343,
+   "agree": 343,
+   "ambiguous": 0,
+   "hit": 2720832,
+   "pred": 2711552,
+   "zero": 0,
+   "short": 0,
+   "classes": {},
+   "short_classes": {},
+   "first32": {},
+   "end": {
+    "free_queue": 343
+   },
+   "evict": {
+    "mamba": 1362,
+    "attn": 597
+   },
+   "controls": {
+    "A": {
+     "hit": 0,
+     "client": 0,
+     "attn": 0,
+     "state": 0
+    },
+    "A_again": {
+     "hit": 1488,
+     "client": 1488,
+     "attn": 1488,
+     "state": 1488
+    },
+    "B": {
+     "hit": 0,
+     "client": 0,
+     "attn": 0,
+     "state": 0
+    }
+   },
+   "retention": 1.0034
+  }
+ ]
+}

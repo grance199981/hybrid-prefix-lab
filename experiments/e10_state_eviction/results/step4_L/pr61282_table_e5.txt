@@ -1,0 +1,3 @@
+﻿cfg=C1 kv_mib=3330 out=16 n=895 retention=0.8503 full=0.864 zero=0.06 above=0.012 other=0.064 recompute_median=469 recompute_p90=8052 ttft_median_ms=549.4 preemptions=12 usage_max=0.989 errors=0 wall_s=312
+cfg=C1 kv_mib=3830 out=16 n=895 retention=0.959 full=0.943 zero=0.026 above=0.023 other=0.008 recompute_median=420 recompute_p90=3304 ttft_median_ms=450.4 preemptions=2 usage_max=0.962 errors=0 wall_s=214
+cfg=C1 kv_mib=9990 out=16 n=895 retention=1.0028 full=0.966 zero=0.0 above=0.034 other=0.0 recompute_median=406 recompute_p90=2117 ttft_median_ms=472.0 preemptions=0 usage_max=0.408 errors=0 wall_s=174

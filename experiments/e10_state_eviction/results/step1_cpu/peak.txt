@@ -1,0 +1,6 @@
+{"label": "cpu_kv480b_out16_seed1_gap1", "requests": 192, "steps": 248, "scheduler": "AsyncScheduler", "queue": 2, "peak_in_use": 199}
+{"label": "cpu_kv480b_out16_seed2_gap1", "requests": 192, "steps": 248, "scheduler": "AsyncScheduler", "queue": 2, "peak_in_use": 199}
+{"label": "cpu_kv480b_out16_seed3_gap1", "requests": 192, "steps": 248, "scheduler": "AsyncScheduler", "queue": 2, "peak_in_use": 199}
+{"label": "cpu_kv480b_out256_seed1_gap1", "requests": 192, "steps": 3128, "scheduler": "AsyncScheduler", "queue": 2, "peak_in_use": 199}
+{"label": "cpu_kv480b_out256_seed2_gap1", "requests": 192, "steps": 3128, "scheduler": "AsyncScheduler", "queue": 2, "peak_in_use": 199}
+{"label": "cpu_kv480b_out256_seed3_gap1", "requests": 192, "steps": 3128, "scheduler": "AsyncScheduler", "queue": 2, "peak_in_use": 199}
