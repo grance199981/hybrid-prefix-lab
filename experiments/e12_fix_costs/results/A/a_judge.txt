@@ -1,0 +1,16 @@
+﻿L kv3330 out16: AK_ok=False AK={'main': {'ttft_p50': -0.0225, 'req_per_s': 0.0054}, 'pr61282': {'ttft_p50': -0.0299, 'req_per_s': 0.0603}}
+   ttft_p50: 4441.05 -> 525.64 (-0.8816)  tpot_p50: 226.75 -> 62.84 (-0.7229)  req_per_s: 1.16 -> 3.1603 (1.7244)  preemptions: 0 -> 33 (None)  retention: 0.2655 -> 0.862 (2.2467)
+L kv3830 out16: AK_ok=False AK={'main': {'ttft_p50': -0.1212, 'req_per_s': 0.045}, 'pr61282': {'ttft_p50': 0.056, 'req_per_s': 0.0594}}
+   ttft_p50: 856.73 -> 481.61 (-0.4379)  tpot_p50: 79.89 -> 39.78 (-0.5021)  req_per_s: 1.9544 -> 4.7988 (1.4554)  preemptions: 0 -> 5 (None)  retention: 0.6488 -> 0.972 (0.4982)
+S kv5184 out16: AK_ok=True AK={'main': {'ttft_p50': -0.0084, 'req_per_s': -0.0001}, 'pr61282': {'ttft_p50': 0.0388, 'req_per_s': 0.0072}}
+   ttft_p50: 414.45 -> 249.23 (-0.3986)  tpot_p50: 85.69 -> 48.15 (-0.4381)  req_per_s: 4.4032 -> 12.8692 (1.9227)  preemptions: 0 -> 0 (None)  retention: 0.5727 -> 1.0 (0.7461)
+S kv5184 out256: AK_ok=False AK={'main': {'ttft_p50': -0.1091, 'req_per_s': 0.0064}, 'pr61282': {'ttft_p50': 0.1113, 'req_per_s': 0.002}}
+   ttft_p50: 1131.78 -> 367.67 (-0.6751)  tpot_p50: 26.25 -> 20.62 (-0.2145)  req_per_s: 1.7475 -> 2.7367 (0.5661)  preemptions: 0 -> 0 (None)  retention: 0.3992 -> 1.0 (1.505)
+S kv8640 out16: AK_ok=False AK={'main': {'ttft_p50': -0.2536, 'req_per_s': 0.0669}, 'pr61282': {'ttft_p50': 0.1531, 'req_per_s': -0.0635}}
+   ttft_p50: 258.64 -> 264.53 (0.0228)  tpot_p50: 47.0 -> 46.88 (-0.0026)  req_per_s: 12.9113 -> 12.8463 (-0.005)  preemptions: 0 -> 0 (None)  retention: 1.0 -> 1.0 (0.0)
+S kv8640 out256: AK_ok=False AK={'main': {'ttft_p50': 0.0405, 'req_per_s': -0.01}, 'pr61282': {'ttft_p50': 0.1288, 'req_per_s': -0.0074}}
+   ttft_p50: 348.26 -> 337.91 (-0.0297)  tpot_p50: 20.37 -> 20.66 (0.0142)  req_per_s: 2.7729 -> 2.7367 (-0.0131)  preemptions: 0 -> 0 (None)  retention: 1.0 -> 1.0 (0.0)
+U kv3456 out256: AK_ok=True AK={'main': {'ttft_p50': 0.0019, 'req_per_s': -0.0017}, 'pr61282': {'ttft_p50': -0.0029, 'req_per_s': 0.0016}}
+   ttft_p50: 1330.64 -> 2006.53 (0.5079)  tpot_p50: 38.4 -> 40.22 (0.0474)  req_per_s: 1.4391 -> 1.2404 (-0.1381)  preemptions: 0 -> 450 (None)  retention: None -> None (None)
+U kv5184 out256: AK_ok=True AK={'main': {'ttft_p50': 0.0024, 'req_per_s': -0.0027}, 'pr61282': {'ttft_p50': -0.0053, 'req_per_s': -0.001}}
+   ttft_p50: 1345.89 -> 1332.99 (-0.0096)  tpot_p50: 38.79 -> 38.82 (0.0008)  req_per_s: 1.4207 -> 1.4215 (0.0006)  preemptions: 0 -> 0 (None)  retention: None -> None (None)

@@ -9,6 +9,8 @@ so a regenerated manifest pins whatever is current):
   qwen3-4b         Qwen3-4B weights                                    -> manifests/qwen3-4b.json
   qwen3.5-9b       Qwen3.5-9B weights (E3)                             -> manifests/qwen3.5-9b.json
   qwen3.5-27b-fp8  Qwen3.5-27B-FP8 weights (E6)                        -> manifests/qwen3.5-27b-fp8.json
+  granite-4.0-micro  IBM Granite 4.0 micro, hybrid (Mamba2) and full-attention (E12)
+                                                                      -> manifests/granite-4.0-micro.json
   qwen3.5-4b       Qwen3.5-4B weights; no manifest is shipped for it (the runs used an
                    existing copy whose chat template equals refs/qwen3.5-4b_chat_template.jinja)
 
@@ -37,6 +39,8 @@ WANTED = {
     "qwen3.5-9b": [("models", "Qwen/Qwen3.5-9B", "models/Qwen3.5-9B", None)],
     "qwen3.5-27b-fp8": [("models", "Qwen/Qwen3.5-27B-FP8", "models/Qwen3.5-27B-FP8", None)],
     "qwen3.5-4b": [("models", "Qwen/Qwen3.5-4B", "models/Qwen3.5-4B", None)],
+    "granite-4.0-micro": [("models", "ibm-granite/granite-4.0-h-micro", "models/granite-4.0-h-micro", None),
+                          ("models", "ibm-granite/granite-4.0-micro", "models/granite-4.0-micro", None)],
 }
 
 

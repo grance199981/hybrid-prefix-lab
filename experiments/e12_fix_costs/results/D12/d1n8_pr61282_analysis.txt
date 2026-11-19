@@ -1,0 +1,3 @@
+﻿1800MiB_out16          n= 264 retention=0.4254  zero= 129  state_only=0.0  both=0.605  first32_state_only=0.0  short=129 short_state_only=0.0  end_not_held=0.0  agree=288/288  ambiguous=0  controls=[True, True, True]  evict={'mamba': 1584, 'attn': 1185}
+2700MiB_out16          n= 264 retention=1.0  zero=   0  state_only=None  both=None  first32_state_only=None  short=0 short_state_only=None  end_not_held=0.0  agree=288/288  ambiguous=0  controls=[True, True, True]  evict={'mamba': 1146, 'attn': 255}
+4500MiB_out16          n= 264 retention=1.0  zero=   0  state_only=None  both=None  first32_state_only=None  short=0 short_state_only=None  end_not_held=0.0  agree=288/288  ambiguous=0  controls=[True, True, True]  evict={'mamba': 898, 'attn': 203}

@@ -1,0 +1,160 @@
+{
+ "by_cell": {
+  "3330MiB_out16": {
+   "turn k-2": 14,
+   "turn k-3": 1,
+   "turn k-4": 1,
+   "turn k-5": 1
+  },
+  "3830MiB_out16": {
+   "turn k-2": 8,
+   "turn k-5": 1
+  }
+ },
+ "examples": [
+  {
+   "cell": "3330MiB_out16",
+   "sid": "smith-2488",
+   "k": 4,
+   "P": 8763,
+   "pred_inf": 7952,
+   "hit": 0,
+   "attn": 8064,
+   "state": 0,
+   "source": "turn k-2",
+   "prev_P": 8113
+  },
+  {
+   "cell": "3330MiB_out16",
+   "sid": "smith-2488",
+   "k": 11,
+   "P": 10836,
+   "pred_inf": 9472,
+   "hit": 0,
+   "attn": 9792,
+   "state": 0,
+   "source": "turn k-2",
+   "prev_P": 10129
+  },
+  {
+   "cell": "3330MiB_out16",
+   "sid": "smith-1998",
+   "k": 5,
+   "P": 8687,
+   "pred_inf": 7616,
+   "hit": 576,
+   "attn": 8064,
+   "state": 576,
+   "source": "turn k-2",
+   "prev_P": 8257
+  },
+  {
+   "cell": "3330MiB_out16",
+   "sid": "smith-2488",
+   "k": 23,
+   "P": 15844,
+   "pred_inf": 14880,
+   "hit": 0,
+   "attn": 14976,
+   "state": 0,
+   "source": "turn k-2",
+   "prev_P": 15233
+  },
+  {
+   "cell": "3330MiB_out16",
+   "sid": "smith-2481",
+   "k": 8,
+   "P": 6902,
+   "pred_inf": 6128,
+   "hit": 576,
+   "attn": 6336,
+   "state": 576,
+   "source": "turn k-2",
+   "prev_P": 6577
+  },
+  {
+   "cell": "3330MiB_out16",
+   "sid": "smith-1764",
+   "k": 14,
+   "P": 10945,
+   "pred_inf": 9712,
+   "hit": 576,
+   "attn": 9792,
+   "state": 576,
+   "source": "turn k-3",
+   "prev_P": 10353
+  },
+  {
+   "cell": "3330MiB_out16",
+   "sid": "smith-1764",
+   "k": 15,
+   "P": 10993,
+   "pred_inf": 9712,
+   "hit": 576,
+   "attn": 10368,
+   "state": 576,
+   "source": "turn k-4",
+   "prev_P": 10945
+  },
+  {
+   "cell": "3330MiB_out16",
+   "sid": "smith-1764",
+   "k": 16,
+   "P": 11812,
+   "pred_inf": 9712,
+   "hit": 0,
+   "attn": 10944,
+   "state": 0,
+   "source": "turn k-5",
+   "prev_P": 10993
+  },
+  {
+   "cell": "3330MiB_out16",
+   "sid": "smith-1523",
+   "k": 10,
+   "P": 13726,
+   "pred_inf": 12832,
+   "hit": 0,
+   "attn": 13248,
+   "state": 0,
+   "source": "turn k-2",
+   "prev_P": 13665
+  },
+  {
+   "cell": "3330MiB_out16",
+   "sid": "smith-2790",
+   "k": 11,
+   "P": 9698,
+   "pred_inf": 7632,
+   "hit": 576,
+   "attn": 8640,
+   "state": 576,
+   "source": "turn k-2",
+   "prev_P": 9121
+  },
+  {
+   "cell": "3330MiB_out16",
+   "sid": "smith-2380",
+   "k": 8,
+   "P": 4518,
+   "pred_inf": 3744,
+   "hit": 0,
+   "attn": 4032,
+   "state": 0,
+   "source": "turn k-2",
+   "prev_P": 4113
+  },
+  {
+   "cell": "3330MiB_out16",
+   "sid": "smith-1941",
+   "k": 4,
+   "P": 9498,
+   "pred_inf": 2112,
+   "hit": 0,
+   "attn": 5760,
+   "state": 0,
+   "source": "turn k-2",
+   "prev_P": 6305
+  }
+ ]
+}

@@ -1,0 +1,62 @@
+{
+ "rebench_qwen35_thinkoff": {
+  "requests": 9191,
+  "lower_with_pr": 0,
+  "share": 0.0,
+  "higher_with_pr": 0,
+  "lost_median": 0,
+  "lost_mean": 0,
+  "lost_per_request_all": 0.0,
+  "lost_share_of_base_hits": 0.0
+ },
+ "rebench_qwen35_thinkon": {
+  "requests": 9191,
+  "lower_with_pr": 0,
+  "share": 0.0,
+  "higher_with_pr": 0,
+  "lost_median": 0,
+  "lost_mean": 0,
+  "lost_per_request_all": 0.0,
+  "lost_share_of_base_hits": 0.0
+ },
+ "smith_qwen35_thinkoff": {
+  "requests": 5370,
+  "lower_with_pr": 122,
+  "share": 0.0227,
+  "higher_with_pr": 0,
+  "lost_median": 576,
+  "lost_mean": 650.0,
+  "lost_per_request_all": 14.77,
+  "lost_share_of_base_hits": 0.00113
+ },
+ "smith_qwen35_thinkon": {
+  "requests": 5370,
+  "lower_with_pr": 39,
+  "share": 0.0073,
+  "higher_with_pr": 0,
+  "lost_median": 384,
+  "lost_mean": 556.3,
+  "lost_per_request_all": 4.04,
+  "lost_share_of_base_hits": 0.00031
+ },
+ "wildchat_qwen35_thinkoff": {
+  "requests": 3721,
+  "lower_with_pr": 46,
+  "share": 0.0124,
+  "higher_with_pr": 0,
+  "lost_median": 320,
+  "lost_mean": 425.7,
+  "lost_per_request_all": 5.26,
+  "lost_share_of_base_hits": 0.00613
+ },
+ "wildchat_qwen35_thinkon": {
+  "requests": 3721,
+  "lower_with_pr": 13,
+  "share": 0.0035,
+  "higher_with_pr": 0,
+  "lost_median": 320,
+  "lost_mean": 398.8,
+  "lost_per_request_all": 1.39,
+  "lost_share_of_base_hits": 0.00162
+ }
+}

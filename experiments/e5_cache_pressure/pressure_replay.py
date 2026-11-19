@@ -223,7 +223,8 @@ def load_sessions(a, tok):
         if None in (a.turns, a.p0, a.step):
             raise SystemExit("--workload synth needs --turns, --p0 and --step")
         vocab = token_ids(tok, "e5-vocab", 4096)
-        return fit(synth_sessions(a.n_sessions, a.turns, a.p0, a.step, a.seed, vocab), a.max_len, a.n_out)
+        return fit(synth_sessions(a.n_sessions, a.turns, a.p0, a.step, a.seed, vocab), a.max_len, a.n_out,
+                   min_requests=a.min_turns)
     if not a.path:
         raise SystemExit(f"--workload {a.workload} needs --path")
     return real_sessions(a.workload, a.path, a.tokenizer_dir, a.chat_template, a.seed, a.n_sessions,
@@ -317,6 +318,8 @@ def main(argv=None):
     ap.add_argument("--turns", type=int, default=None, help="synth: requests per session")
     ap.add_argument("--p0", type=int, default=None, help="synth: first prompt length")
     ap.add_argument("--step", type=int, default=None, help="synth: tokens added per turn")
+    ap.add_argument("--min-turns", type=int, default=2,
+                    help="synth: keep sessions with at least this many requests (1: single-turn, no reuse)")
     ap.add_argument("--max-len", type=int, default=16384)
     ap.add_argument("--n-out", type=int, required=True, help="output tokens of every request")
     ap.add_argument("--mode", required=True, choices=["closed", "window"])

@@ -1,0 +1,6 @@
+﻿{
+  "success": false,
+  "exit_code": 2,
+  "stdout": "",
+  "stderr": "bash: -c: line 2: syntax error: unexpected end of file\n"
+}

@@ -1,0 +1,284 @@
+{
+ "layout": {
+  "groups": [
+   "attn"
+  ],
+  "init": [
+   {
+    "ev": "init",
+    "scheduler": "AsyncScheduler",
+    "groups": [
+     "attn"
+    ],
+    "block_sizes": [
+     64
+    ],
+    "num_blocks": 1026,
+    "hash_block_size": 64,
+    "block_size": 64,
+    "max_num_batched_tokens": 2048,
+    "max_num_seqs": 32,
+    "async_scheduling": true,
+    "long_prefill_token_threshold": 0,
+    "policy": "fcfs",
+    "t": 1795032439059957979
+   }
+  ]
+ },
+ "cells": {
+  "5132MiB_out16": {
+   "files": 3,
+   "n": 528,
+   "retention": 0.7412,
+   "zero": 74,
+   "short": 125,
+   "matched": 0,
+   "agree": 0,
+   "ambiguous": 0,
+   "share_short_state_only": 0.0,
+   "share_state_only": 0.0,
+   "share_both": 0.0,
+   "first32_state_only": 0.0,
+   "end_not_held": null,
+   "controls_ok": [
+    null,
+    null,
+    null
+   ],
+   "classes": {
+    "unmatched": 74
+   },
+   "short_classes": {
+    "unmatched": 125
+   },
+   "first32": {
+    "unmatched": 74
+   },
+   "end": {},
+   "evict": {
+    "attn": 7515
+   }
+  },
+  "5132MiB_out256": {
+   "files": 3,
+   "n": 528,
+   "retention": 0.6893,
+   "zero": 101,
+   "short": 140,
+   "matched": 0,
+   "agree": 0,
+   "ambiguous": 0,
+   "share_short_state_only": 0.0,
+   "share_state_only": 0.0,
+   "share_both": 0.0,
+   "first32_state_only": 0.0,
+   "end_not_held": null,
+   "controls_ok": [
+    null,
+    null,
+    null
+   ],
+   "classes": {
+    "unmatched": 101
+   },
+   "short_classes": {
+    "unmatched": 140
+   },
+   "first32": {
+    "unmatched": 96
+   },
+   "end": {},
+   "evict": {
+    "attn": 11237
+   }
+  }
+ },
+ "files": [
+  {
+   "label": "G0_S_synth_kv5132_out16_seed1",
+   "n_sessions_seen": 0,
+   "n": 176,
+   "matched": 0,
+   "agree": 0,
+   "ambiguous": 0,
+   "hit": 425984,
+   "pred": 566272,
+   "zero": 24,
+   "short": 39,
+   "classes": {
+    "unmatched": 24
+   },
+   "short_classes": {
+    "unmatched": 39
+   },
+   "first32": {
+    "unmatched": 24
+   },
+   "end": {},
+   "evict": {
+    "attn": 2407
+   },
+   "controls": {
+    "A": null,
+    "A_again": null,
+    "B": null
+   },
+   "retention": 0.7523
+  },
+  {
+   "label": "G0_S_synth_kv5132_out16_seed2",
+   "n_sessions_seen": 0,
+   "n": 176,
+   "matched": 0,
+   "agree": 0,
+   "ambiguous": 0,
+   "hit": 416576,
+   "pred": 566272,
+   "zero": 25,
+   "short": 43,
+   "classes": {
+    "unmatched": 25
+   },
+   "short_classes": {
+    "unmatched": 43
+   },
+   "first32": {
+    "unmatched": 25
+   },
+   "end": {},
+   "evict": {
+    "attn": 2554
+   },
+   "controls": {
+    "A": null,
+    "A_again": null,
+    "B": null
+   },
+   "retention": 0.7356
+  },
+  {
+   "label": "G0_S_synth_kv5132_out16_seed3",
+   "n_sessions_seen": 0,
+   "n": 176,
+   "matched": 0,
+   "agree": 0,
+   "ambiguous": 0,
+   "hit": 416576,
+   "pred": 566272,
+   "zero": 25,
+   "short": 43,
+   "classes": {
+    "unmatched": 25
+   },
+   "short_classes": {
+    "unmatched": 43
+   },
+   "first32": {
+    "unmatched": 25
+   },
+   "end": {},
+   "evict": {
+    "attn": 2554
+   },
+   "controls": {
+    "A": null,
+    "A_again": null,
+    "B": null
+   },
+   "retention": 0.7356
+  },
+  {
+   "label": "G0_S_synth_kv5132_out256_seed1",
+   "n_sessions_seen": 0,
+   "n": 176,
+   "matched": 0,
+   "agree": 0,
+   "ambiguous": 0,
+   "hit": 395840,
+   "pred": 566272,
+   "zero": 33,
+   "short": 45,
+   "classes": {
+    "unmatched": 33
+   },
+   "short_classes": {
+    "unmatched": 45
+   },
+   "first32": {
+    "unmatched": 32
+   },
+   "end": {},
+   "evict": {
+    "attn": 3660
+   },
+   "controls": {
+    "A": null,
+    "A_again": null,
+    "B": null
+   },
+   "retention": 0.699
+  },
+  {
+   "label": "G0_S_synth_kv5132_out256_seed2",
+   "n_sessions_seen": 0,
+   "n": 176,
+   "matched": 0,
+   "agree": 0,
+   "ambiguous": 0,
+   "hit": 386496,
+   "pred": 566272,
+   "zero": 34,
+   "short": 48,
+   "classes": {
+    "unmatched": 34
+   },
+   "short_classes": {
+    "unmatched": 48
+   },
+   "first32": {
+    "unmatched": 32
+   },
+   "end": {},
+   "evict": {
+    "attn": 3806
+   },
+   "controls": {
+    "A": null,
+    "A_again": null,
+    "B": null
+   },
+   "retention": 0.6825
+  },
+  {
+   "label": "G0_S_synth_kv5132_out256_seed3",
+   "n_sessions_seen": 0,
+   "n": 176,
+   "matched": 0,
+   "agree": 0,
+   "ambiguous": 0,
+   "hit": 388736,
+   "pred": 566272,
+   "zero": 34,
+   "short": 47,
+   "classes": {
+    "unmatched": 34
+   },
+   "short_classes": {
+    "unmatched": 47
+   },
+   "first32": {
+    "unmatched": 32
+   },
+   "end": {},
+   "evict": {
+    "attn": 3771
+   },
+   "controls": {
+    "A": null,
+    "A_again": null,
+    "B": null
+   },
+   "retention": 0.6865
+  }
+ ]
+}

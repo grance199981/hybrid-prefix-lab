@@ -49,13 +49,14 @@ def synth_sessions(n_sessions, turns, p0, step, seed, vocab_ids):
     return out
 
 
-def fit(sessions, max_len, n_out):
+def fit(sessions, max_len, n_out, min_requests=2):
     """Drop requests that leave no room for n_out output tokens; keep sessions
-    that still have at least two requests."""
+    that still have at least `min_requests` requests (2 by default; 1 for the
+    single-turn, no-reuse workload of E12)."""
     out = []
     for s in sessions:
         prompts = [p for p in s["prompts"] if len(p) + n_out <= max_len]
-        if len(prompts) >= 2:
+        if len(prompts) >= min_requests:
             out.append({"sid": s["sid"], "prompts": prompts})
     return out
 

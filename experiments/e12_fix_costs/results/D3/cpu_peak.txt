@@ -1,0 +1,19 @@
+﻿main seed 1 out 16: "peak_in_use": 307 {"label": "cpu_kv975b_out16_see
+main seed 1 out 256: "peak_in_use": 307 {"label": "cpu_kv975b_out256_s
+main seed 2 out 16: "peak_in_use": 307 {"label": "cpu_kv975b_out16_see
+main seed 2 out 256: "peak_in_use": 307 {"label": "cpu_kv975b_out256_s
+main seed 3 out 16: "peak_in_use": 307 {"label": "cpu_kv975b_out16_see
+main seed 3 out 256: "peak_in_use": 307 {"label": "cpu_kv975b_out256_s
+pr61282 seed 1 out 16: "peak_in_use": 442 {"label": "cpu_kv975b_out16_
+pr61282 seed 1 out 256: "peak_in_use": 451 {"label": "cpu_kv975b_out25
+pr61282 seed 2 out 16: "peak_in_use": 442 {"label": "cpu_kv975b_out16_
+pr61282 seed 2 out 256: "peak_in_use": 451 {"label": "cpu_kv975b_out25
+pr61282 seed 3 out 16: "peak_in_use": 442 {"label": "cpu_kv975b_out16_
+pr61282 seed 3 out 256: "peak_in_use": 451 {"label": "cpu_kv975b_out25
+G0 s1_o16 "peak_in_use": 1201
+G0 s1_o256 "peak_in_use": 1262
+G0 s2_o16 "peak_in_use": 1201
+G0 s2_o256 "peak_in_use": 1262
+G0 s3_o16 "peak_in_use": 1201
+G0 s3_o256 "peak_in_use": 1262
+

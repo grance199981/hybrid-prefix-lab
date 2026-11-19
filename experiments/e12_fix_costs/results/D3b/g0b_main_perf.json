@@ -1,0 +1,42 @@
+[
+ {
+  "cfg": "G0",
+  "workload": "synth",
+  "kv_mib": 6310,
+  "out": 16,
+  "seeds": 3,
+  "n": 576,
+  "errors": 0,
+  "ttft_p50": 187.85,
+  "ttft_p90": 299.47,
+  "ttft_later_p50": 184.66,
+  "tpot_p50": 51.83,
+  "req_per_s": 13.6229,
+  "out_tok_per_s": 217.97,
+  "wall_s": 42.3,
+  "preemptions": 0,
+  "usage_max": 0.826,
+  "retention": 1.0,
+  "cached_share": 0.8739
+ },
+ {
+  "cfg": "G0",
+  "workload": "synth",
+  "kv_mib": 6310,
+  "out": 256,
+  "seeds": 3,
+  "n": 576,
+  "errors": 0,
+  "ttft_p50": 195.95,
+  "ttft_p90": 320.3,
+  "ttft_later_p50": 192.05,
+  "tpot_p50": 20.8,
+  "req_per_s": 2.8398,
+  "out_tok_per_s": 726.98,
+  "wall_s": 202.8,
+  "preemptions": 3,
+  "usage_max": 0.99,
+  "retention": 1.0,
+  "cached_share": 0.8739
+ }
+]

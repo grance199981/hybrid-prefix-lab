@@ -1,0 +1,2 @@
+﻿6310MiB_out16          n= 528 retention=1.0  zero=   0  state_only=None  both=None  first32_state_only=None  short=0 short_state_only=None  end_not_held=None  agree=0/0  ambiguous=0  controls=[None, None, None]  evict={}
+6310MiB_out256         n= 528 retention=1.0  zero=   0  state_only=None  both=None  first32_state_only=None  short=0 short_state_only=None  end_not_held=None  agree=0/0  ambiguous=0  controls=[None, None, None]  evict={'attn': 2118}

@@ -1,0 +1,43 @@
+{
+ "cfg": "C1a",
+ "unit": 64,
+ "budget": 8192,
+ "same_rule": false,
+ "requests_k_gt_0": 3161,
+ "measured_lower_with_pr": 27,
+ "predicted_lower_with_pr": 28,
+ "in_both": 27,
+ "predicted_only": 1,
+ "measured_only": 0,
+ "measured_lower_with_both_hits_exact": 25,
+ "exact_hit_predictions": {
+  "base": 3161,
+  "pr": 3158
+ },
+ "mismatches_examples": {
+  "base": [],
+  "pr": [
+   [
+    "C1a_smith_thinkoff_R_s1_seed6",
+    "smith-1",
+    1,
+    0,
+    576
+   ],
+   [
+    "C1a_smith_thinkoff_R_s1_seed6",
+    "smith-1986",
+    8,
+    4800,
+    8640
+   ],
+   [
+    "C1a_smith_thinkon_R_s1_seed6",
+    "smith-1",
+    1,
+    0,
+    576
+   ]
+  ]
+ }
+}

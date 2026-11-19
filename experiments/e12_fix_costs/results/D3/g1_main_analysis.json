@@ -1,0 +1,1195 @@
+{
+ "layout": {
+  "groups": [
+   "mamba",
+   "mamba",
+   "mamba",
+   "mamba",
+   "mamba",
+   "mamba",
+   "mamba",
+   "mamba",
+   "mamba",
+   "attn"
+  ],
+  "init": [
+   {
+    "ev": "init",
+    "scheduler": "AsyncScheduler",
+    "groups": [
+     "mamba",
+     "mamba",
+     "mamba",
+     "mamba",
+     "mamba",
+     "mamba",
+     "mamba",
+     "mamba",
+     "mamba",
+     "attn"
+    ],
+    "block_sizes": [
+     576,
+     576,
+     576,
+     576,
+     576,
+     576,
+     576,
+     576,
+     576,
+     576
+    ],
+    "num_blocks": 674,
+    "hash_block_size": 16,
+    "block_size": 576,
+    "max_num_batched_tokens": 2048,
+    "max_num_seqs": 32,
+    "async_scheduling": true,
+    "long_prefill_token_threshold": 0,
+    "policy": "fcfs",
+    "t": 1795029398917966644
+   }
+  ]
+ },
+ "cells": {
+  "1214MiB_out16": {
+   "files": 3,
+   "n": 528,
+   "retention": 0.0,
+   "zero": 528,
+   "short": 528,
+   "matched": 576,
+   "agree": 576,
+   "ambiguous": 0,
+   "share_short_state_only": 0.25,
+   "share_state_only": 0.25,
+   "share_both": 0.75,
+   "first32_state_only": 0.708,
+   "end_not_held": 1.0,
+   "controls_ok": [
+    true,
+    true,
+    true
+   ],
+   "classes": {
+    "state_only": 132,
+    "both": 396
+   },
+   "short_classes": {
+    "state_only": 132,
+    "both": 396
+   },
+   "first32": {
+    "state_only": 68,
+    "both": 28
+   },
+   "end": {
+    "gone": 464,
+    "free_queue": 112
+   },
+   "evict": {
+    "mamba": 6846,
+    "attn": 3297
+   }
+  },
+  "1214MiB_out256": {
+   "files": 3,
+   "n": 528,
+   "retention": 0.0,
+   "zero": 528,
+   "short": 528,
+   "matched": 576,
+   "agree": 576,
+   "ambiguous": 0,
+   "share_short_state_only": 0.326,
+   "share_state_only": 0.326,
+   "share_both": 0.674,
+   "first32_state_only": 0.677,
+   "end_not_held": 1.0,
+   "controls_ok": [
+    true,
+    true,
+    true
+   ],
+   "classes": {
+    "state_only": 172,
+    "both": 356
+   },
+   "short_classes": {
+    "state_only": 172,
+    "both": 356
+   },
+   "first32": {
+    "state_only": 65,
+    "both": 31
+   },
+   "end": {
+    "gone": 573,
+    "free_queue": 3
+   },
+   "evict": {
+    "mamba": 7836,
+    "attn": 3525
+   }
+  },
+  "1820MiB_out16": {
+   "files": 3,
+   "n": 528,
+   "retention": 0.0243,
+   "zero": 507,
+   "short": 507,
+   "matched": 576,
+   "agree": 576,
+   "ambiguous": 0,
+   "share_short_state_only": 1.0,
+   "share_state_only": 1.0,
+   "share_both": 0.0,
+   "first32_state_only": 1.0,
+   "end_not_held": 1.0,
+   "controls_ok": [
+    true,
+    true,
+    true
+   ],
+   "classes": {
+    "state_only": 507
+   },
+   "short_classes": {
+    "state_only": 507
+   },
+   "first32": {
+    "state_only": 96
+   },
+   "end": {
+    "free_queue": 390,
+    "gone": 186
+   },
+   "evict": {
+    "mamba": 9186,
+    "attn": 3153
+   }
+  },
+  "1820MiB_out256": {
+   "files": 3,
+   "n": 528,
+   "retention": 0.0243,
+   "zero": 507,
+   "short": 507,
+   "matched": 576,
+   "agree": 576,
+   "ambiguous": 0,
+   "share_short_state_only": 1.0,
+   "share_state_only": 1.0,
+   "share_both": 0.0,
+   "first32_state_only": 1.0,
+   "end_not_held": 1.0,
+   "controls_ok": [
+    true,
+    true,
+    true
+   ],
+   "classes": {
+    "state_only": 507
+   },
+   "short_classes": {
+    "state_only": 507
+   },
+   "first32": {
+    "state_only": 96
+   },
+   "end": {
+    "free_queue": 48,
+    "gone": 528
+   },
+   "evict": {
+    "mamba": 9477,
+    "attn": 3105
+   }
+  },
+  "3035MiB_out16": {
+   "files": 3,
+   "n": 528,
+   "retention": 0.9848,
+   "zero": 6,
+   "short": 6,
+   "matched": 576,
+   "agree": 576,
+   "ambiguous": 0,
+   "share_short_state_only": 1.0,
+   "share_state_only": 1.0,
+   "share_both": 0.0,
+   "first32_state_only": 1.0,
+   "end_not_held": 1.0,
+   "controls_ok": [
+    true,
+    true,
+    true
+   ],
+   "classes": {
+    "state_only": 6
+   },
+   "short_classes": {
+    "state_only": 6
+   },
+   "first32": {
+    "state_only": 6
+   },
+   "end": {
+    "free_queue": 576
+   },
+   "evict": {
+    "mamba": 6280,
+    "attn": 495
+   }
+  },
+  "3035MiB_out256": {
+   "files": 3,
+   "n": 528,
+   "retention": 0.9851,
+   "zero": 6,
+   "short": 6,
+   "matched": 576,
+   "agree": 576,
+   "ambiguous": 0,
+   "share_short_state_only": 1.0,
+   "share_state_only": 1.0,
+   "share_both": 0.0,
+   "first32_state_only": 1.0,
+   "end_not_held": 1.0,
+   "controls_ok": [
+    true,
+    true,
+    true
+   ],
+   "classes": {
+    "state_only": 6
+   },
+   "short_classes": {
+    "state_only": 6
+   },
+   "first32": {
+    "state_only": 6
+   },
+   "end": {
+    "free_queue": 573,
+    "gone": 3
+   },
+   "evict": {
+    "mamba": 6228,
+    "attn": 528
+   }
+  }
+ },
+ "files": [
+  {
+   "label": "G1_S_synth_kv1214_out16_seed1",
+   "n_sessions_seen": 16,
+   "n": 176,
+   "matched": 192,
+   "agree": 192,
+   "ambiguous": 0,
+   "hit": 0,
+   "pred": 570368,
+   "zero": 176,
+   "short": 176,
+   "classes": {
+    "state_only": 46,
+    "both": 130
+   },
+   "short_classes": {
+    "state_only": 46,
+    "both": 130
+   },
+   "first32": {
+    "state_only": 24,
+    "both": 8
+   },
+   "end": {
+    "gone": 154,
+    "free_queue": 38
+   },
+   "evict": {
+    "mamba": 2288,
+    "attn": 1099
+   },
+   "controls": {
+    "A": {
+     "hit": 0,
+     "client": 0,
+     "attn": 0,
+     "state": 0
+    },
+    "A_again": {
+     "hit": 1488,
+     "client": 1488,
+     "attn": 1488,
+     "state": 1488
+    },
+    "B": {
+     "hit": 0,
+     "client": 0,
+     "attn": 0,
+     "state": 0
+    }
+   },
+   "retention": 0.0
+  },
+  {
+   "label": "G1_S_synth_kv1214_out16_seed2",
+   "n_sessions_seen": 16,
+   "n": 176,
+   "matched": 192,
+   "agree": 192,
+   "ambiguous": 0,
+   "hit": 0,
+   "pred": 570368,
+   "zero": 176,
+   "short": 176,
+   "classes": {
+    "state_only": 43,
+    "both": 133
+   },
+   "short_classes": {
+    "state_only": 43,
+    "both": 133
+   },
+   "first32": {
+    "state_only": 22,
+    "both": 10
+   },
+   "end": {
+    "gone": 155,
+    "free_queue": 37
+   },
+   "evict": {
+    "mamba": 2279,
+    "attn": 1099
+   },
+   "controls": {
+    "A": {
+     "hit": 0,
+     "client": 0,
+     "attn": 0,
+     "state": 0
+    },
+    "A_again": {
+     "hit": 1488,
+     "client": 1488,
+     "attn": 1488,
+     "state": 1488
+    },
+    "B": {
+     "hit": 0,
+     "client": 0,
+     "attn": 0,
+     "state": 0
+    }
+   },
+   "retention": 0.0
+  },
+  {
+   "label": "G1_S_synth_kv1214_out16_seed3",
+   "n_sessions_seen": 16,
+   "n": 176,
+   "matched": 192,
+   "agree": 192,
+   "ambiguous": 0,
+   "hit": 0,
+   "pred": 570368,
+   "zero": 176,
+   "short": 176,
+   "classes": {
+    "state_only": 43,
+    "both": 133
+   },
+   "short_classes": {
+    "state_only": 43,
+    "both": 133
+   },
+   "first32": {
+    "state_only": 22,
+    "both": 10
+   },
+   "end": {
+    "gone": 155,
+    "free_queue": 37
+   },
+   "evict": {
+    "mamba": 2279,
+    "attn": 1099
+   },
+   "controls": {
+    "A": {
+     "hit": 0,
+     "client": 0,
+     "attn": 0,
+     "state": 0
+    },
+    "A_again": {
+     "hit": 1488,
+     "client": 1488,
+     "attn": 1488,
+     "state": 1488
+    },
+    "B": {
+     "hit": 0,
+     "client": 0,
+     "attn": 0,
+     "state": 0
+    }
+   },
+   "retention": 0.0
+  },
+  {
+   "label": "G1_S_synth_kv1214_out256_seed1",
+   "n_sessions_seen": 16,
+   "n": 176,
+   "matched": 192,
+   "agree": 192,
+   "ambiguous": 0,
+   "hit": 0,
+   "pred": 570368,
+   "zero": 176,
+   "short": 176,
+   "classes": {
+    "state_only": 57,
+    "both": 119
+   },
+   "short_classes": {
+    "state_only": 57,
+    "both": 119
+   },
+   "first32": {
+    "state_only": 21,
+    "both": 11
+   },
+   "end": {
+    "gone": 191,
+    "free_queue": 1
+   },
+   "evict": {
+    "mamba": 2621,
+    "attn": 1191
+   },
+   "controls": {
+    "A": {
+     "hit": 0,
+     "client": 0,
+     "attn": 0,
+     "state": 0
+    },
+    "A_again": {
+     "hit": 1488,
+     "client": 1488,
+     "attn": 1488,
+     "state": 1488
+    },
+    "B": {
+     "hit": 0,
+     "client": 0,
+     "attn": 0,
+     "state": 0
+    }
+   },
+   "retention": 0.0
+  },
+  {
+   "label": "G1_S_synth_kv1214_out256_seed2",
+   "n_sessions_seen": 16,
+   "n": 176,
+   "matched": 192,
+   "agree": 192,
+   "ambiguous": 0,
+   "hit": 0,
+   "pred": 570368,
+   "zero": 176,
+   "short": 176,
+   "classes": {
+    "state_only": 57,
+    "both": 119
+   },
+   "short_classes": {
+    "state_only": 57,
+    "both": 119
+   },
+   "first32": {
+    "state_only": 21,
+    "both": 11
+   },
+   "end": {
+    "gone": 191,
+    "free_queue": 1
+   },
+   "evict": {
+    "mamba": 2603,
+    "attn": 1167
+   },
+   "controls": {
+    "A": {
+     "hit": 0,
+     "client": 0,
+     "attn": 0,
+     "state": 0
+    },
+    "A_again": {
+     "hit": 1488,
+     "client": 1488,
+     "attn": 1488,
+     "state": 1488
+    },
+    "B": {
+     "hit": 0,
+     "client": 0,
+     "attn": 0,
+     "state": 0
+    }
+   },
+   "retention": 0.0
+  },
+  {
+   "label": "G1_S_synth_kv1214_out256_seed3",
+   "n_sessions_seen": 16,
+   "n": 176,
+   "matched": 192,
+   "agree": 192,
+   "ambiguous": 0,
+   "hit": 0,
+   "pred": 570368,
+   "zero": 176,
+   "short": 176,
+   "classes": {
+    "state_only": 58,
+    "both": 118
+   },
+   "short_classes": {
+    "state_only": 58,
+    "both": 118
+   },
+   "first32": {
+    "state_only": 23,
+    "both": 9
+   },
+   "end": {
+    "gone": 191,
+    "free_queue": 1
+   },
+   "evict": {
+    "mamba": 2612,
+    "attn": 1167
+   },
+   "controls": {
+    "A": {
+     "hit": 0,
+     "client": 0,
+     "attn": 0,
+     "state": 0
+    },
+    "A_again": {
+     "hit": 1488,
+     "client": 1488,
+     "attn": 1488,
+     "state": 1488
+    },
+    "B": {
+     "hit": 0,
+     "client": 0,
+     "attn": 0,
+     "state": 0
+    }
+   },
+   "retention": 0.0
+  },
+  {
+   "label": "G1_S_synth_kv1820_out16_seed1",
+   "n_sessions_seen": 16,
+   "n": 176,
+   "matched": 192,
+   "agree": 192,
+   "ambiguous": 0,
+   "hit": 13888,
+   "pred": 570368,
+   "zero": 169,
+   "short": 169,
+   "classes": {
+    "state_only": 169
+   },
+   "short_classes": {
+    "state_only": 169
+   },
+   "first32": {
+    "state_only": 32
+   },
+   "end": {
+    "free_queue": 130,
+    "gone": 62
+   },
+   "evict": {
+    "mamba": 3062,
+    "attn": 1051
+   },
+   "controls": {
+    "A": {
+     "hit": 0,
+     "client": 0,
+     "attn": 0,
+     "state": 0
+    },
+    "A_again": {
+     "hit": 1488,
+     "client": 1488,
+     "attn": 1488,
+     "state": 1488
+    },
+    "B": {
+     "hit": 0,
+     "client": 0,
+     "attn": 0,
+     "state": 0
+    }
+   },
+   "retention": 0.0243
+  },
+  {
+   "label": "G1_S_synth_kv1820_out16_seed2",
+   "n_sessions_seen": 16,
+   "n": 176,
+   "matched": 192,
+   "agree": 192,
+   "ambiguous": 0,
+   "hit": 13888,
+   "pred": 570368,
+   "zero": 169,
+   "short": 169,
+   "classes": {
+    "state_only": 169
+   },
+   "short_classes": {
+    "state_only": 169
+   },
+   "first32": {
+    "state_only": 32
+   },
+   "end": {
+    "free_queue": 130,
+    "gone": 62
+   },
+   "evict": {
+    "mamba": 3062,
+    "attn": 1051
+   },
+   "controls": {
+    "A": {
+     "hit": 0,
+     "client": 0,
+     "attn": 0,
+     "state": 0
+    },
+    "A_again": {
+     "hit": 1488,
+     "client": 1488,
+     "attn": 1488,
+     "state": 1488
+    },
+    "B": {
+     "hit": 0,
+     "client": 0,
+     "attn": 0,
+     "state": 0
+    }
+   },
+   "retention": 0.0243
+  },
+  {
+   "label": "G1_S_synth_kv1820_out16_seed3",
+   "n_sessions_seen": 16,
+   "n": 176,
+   "matched": 192,
+   "agree": 192,
+   "ambiguous": 0,
+   "hit": 13888,
+   "pred": 570368,
+   "zero": 169,
+   "short": 169,
+   "classes": {
+    "state_only": 169
+   },
+   "short_classes": {
+    "state_only": 169
+   },
+   "first32": {
+    "state_only": 32
+   },
+   "end": {
+    "free_queue": 130,
+    "gone": 62
+   },
+   "evict": {
+    "mamba": 3062,
+    "attn": 1051
+   },
+   "controls": {
+    "A": {
+     "hit": 0,
+     "client": 0,
+     "attn": 0,
+     "state": 0
+    },
+    "A_again": {
+     "hit": 1488,
+     "client": 1488,
+     "attn": 1488,
+     "state": 1488
+    },
+    "B": {
+     "hit": 0,
+     "client": 0,
+     "attn": 0,
+     "state": 0
+    }
+   },
+   "retention": 0.0243
+  },
+  {
+   "label": "G1_S_synth_kv1820_out256_seed1",
+   "n_sessions_seen": 16,
+   "n": 176,
+   "matched": 192,
+   "agree": 192,
+   "ambiguous": 0,
+   "hit": 13888,
+   "pred": 570368,
+   "zero": 169,
+   "short": 169,
+   "classes": {
+    "state_only": 169
+   },
+   "short_classes": {
+    "state_only": 169
+   },
+   "first32": {
+    "state_only": 32
+   },
+   "end": {
+    "free_queue": 16,
+    "gone": 176
+   },
+   "evict": {
+    "mamba": 3159,
+    "attn": 1035
+   },
+   "controls": {
+    "A": {
+     "hit": 0,
+     "client": 0,
+     "attn": 0,
+     "state": 0
+    },
+    "A_again": {
+     "hit": 1488,
+     "client": 1488,
+     "attn": 1488,
+     "state": 1488
+    },
+    "B": {
+     "hit": 0,
+     "client": 0,
+     "attn": 0,
+     "state": 0
+    }
+   },
+   "retention": 0.0243
+  },
+  {
+   "label": "G1_S_synth_kv1820_out256_seed2",
+   "n_sessions_seen": 16,
+   "n": 176,
+   "matched": 192,
+   "agree": 192,
+   "ambiguous": 0,
+   "hit": 13888,
+   "pred": 570368,
+   "zero": 169,
+   "short": 169,
+   "classes": {
+    "state_only": 169
+   },
+   "short_classes": {
+    "state_only": 169
+   },
+   "first32": {
+    "state_only": 32
+   },
+   "end": {
+    "free_queue": 16,
+    "gone": 176
+   },
+   "evict": {
+    "mamba": 3159,
+    "attn": 1035
+   },
+   "controls": {
+    "A": {
+     "hit": 0,
+     "client": 0,
+     "attn": 0,
+     "state": 0
+    },
+    "A_again": {
+     "hit": 1488,
+     "client": 1488,
+     "attn": 1488,
+     "state": 1488
+    },
+    "B": {
+     "hit": 0,
+     "client": 0,
+     "attn": 0,
+     "state": 0
+    }
+   },
+   "retention": 0.0243
+  },
+  {
+   "label": "G1_S_synth_kv1820_out256_seed3",
+   "n_sessions_seen": 16,
+   "n": 176,
+   "matched": 192,
+   "agree": 192,
+   "ambiguous": 0,
+   "hit": 13888,
+   "pred": 570368,
+   "zero": 169,
+   "short": 169,
+   "classes": {
+    "state_only": 169
+   },
+   "short_classes": {
+    "state_only": 169
+   },
+   "first32": {
+    "state_only": 32
+   },
+   "end": {
+    "free_queue": 16,
+    "gone": 176
+   },
+   "evict": {
+    "mamba": 3159,
+    "attn": 1035
+   },
+   "controls": {
+    "A": {
+     "hit": 0,
+     "client": 0,
+     "attn": 0,
+     "state": 0
+    },
+    "A_again": {
+     "hit": 1488,
+     "client": 1488,
+     "attn": 1488,
+     "state": 1488
+    },
+    "B": {
+     "hit": 0,
+     "client": 0,
+     "attn": 0,
+     "state": 0
+    }
+   },
+   "retention": 0.0243
+  },
+  {
+   "label": "G1_S_synth_kv3035_out16_seed1",
+   "n_sessions_seen": 16,
+   "n": 176,
+   "matched": 192,
+   "agree": 192,
+   "ambiguous": 0,
+   "hit": 570368,
+   "pred": 570368,
+   "zero": 0,
+   "short": 0,
+   "classes": {},
+   "short_classes": {},
+   "first32": {},
+   "end": {
+    "free_queue": 192
+   },
+   "evict": {
+    "mamba": 2078,
+    "attn": 161
+   },
+   "controls": {
+    "A": {
+     "hit": 0,
+     "client": 0,
+     "attn": 0,
+     "state": 0
+    },
+    "A_again": {
+     "hit": 1488,
+     "client": 1488,
+     "attn": 1488,
+     "state": 1488
+    },
+    "B": {
+     "hit": 0,
+     "client": 0,
+     "attn": 0,
+     "state": 0
+    }
+   },
+   "retention": 1.0
+  },
+  {
+   "label": "G1_S_synth_kv3035_out16_seed2",
+   "n_sessions_seen": 16,
+   "n": 176,
+   "matched": 192,
+   "agree": 192,
+   "ambiguous": 0,
+   "hit": 557392,
+   "pred": 570368,
+   "zero": 3,
+   "short": 3,
+   "classes": {
+    "state_only": 3
+   },
+   "short_classes": {
+    "state_only": 3
+   },
+   "first32": {
+    "state_only": 3
+   },
+   "end": {
+    "free_queue": 192
+   },
+   "evict": {
+    "mamba": 2101,
+    "attn": 167
+   },
+   "controls": {
+    "A": {
+     "hit": 0,
+     "client": 0,
+     "attn": 0,
+     "state": 0
+    },
+    "A_again": {
+     "hit": 1488,
+     "client": 1488,
+     "attn": 1488,
+     "state": 1488
+    },
+    "B": {
+     "hit": 0,
+     "client": 0,
+     "attn": 0,
+     "state": 0
+    }
+   },
+   "retention": 0.9772
+  },
+  {
+   "label": "G1_S_synth_kv3035_out16_seed3",
+   "n_sessions_seen": 16,
+   "n": 176,
+   "matched": 192,
+   "agree": 192,
+   "ambiguous": 0,
+   "hit": 557392,
+   "pred": 570368,
+   "zero": 3,
+   "short": 3,
+   "classes": {
+    "state_only": 3
+   },
+   "short_classes": {
+    "state_only": 3
+   },
+   "first32": {
+    "state_only": 3
+   },
+   "end": {
+    "free_queue": 192
+   },
+   "evict": {
+    "mamba": 2101,
+    "attn": 167
+   },
+   "controls": {
+    "A": {
+     "hit": 0,
+     "client": 0,
+     "attn": 0,
+     "state": 0
+    },
+    "A_again": {
+     "hit": 1488,
+     "client": 1488,
+     "attn": 1488,
+     "state": 1488
+    },
+    "B": {
+     "hit": 0,
+     "client": 0,
+     "attn": 0,
+     "state": 0
+    }
+   },
+   "retention": 0.9772
+  },
+  {
+   "label": "G1_S_synth_kv3035_out256_seed1",
+   "n_sessions_seen": 16,
+   "n": 176,
+   "matched": 192,
+   "agree": 192,
+   "ambiguous": 0,
+   "hit": 561888,
+   "pred": 570368,
+   "zero": 2,
+   "short": 2,
+   "classes": {
+    "state_only": 2
+   },
+   "short_classes": {
+    "state_only": 2
+   },
+   "first32": {
+    "state_only": 2
+   },
+   "end": {
+    "free_queue": 191,
+    "gone": 1
+   },
+   "evict": {
+    "mamba": 2076,
+    "attn": 176
+   },
+   "controls": {
+    "A": {
+     "hit": 0,
+     "client": 0,
+     "attn": 0,
+     "state": 0
+    },
+    "A_again": {
+     "hit": 1488,
+     "client": 1488,
+     "attn": 1488,
+     "state": 1488
+    },
+    "B": {
+     "hit": 0,
+     "client": 0,
+     "attn": 0,
+     "state": 0
+    }
+   },
+   "retention": 0.9851
+  },
+  {
+   "label": "G1_S_synth_kv3035_out256_seed2",
+   "n_sessions_seen": 16,
+   "n": 176,
+   "matched": 192,
+   "agree": 192,
+   "ambiguous": 0,
+   "hit": 561888,
+   "pred": 570368,
+   "zero": 2,
+   "short": 2,
+   "classes": {
+    "state_only": 2
+   },
+   "short_classes": {
+    "state_only": 2
+   },
+   "first32": {
+    "state_only": 2
+   },
+   "end": {
+    "free_queue": 191,
+    "gone": 1
+   },
+   "evict": {
+    "mamba": 2076,
+    "attn": 176
+   },
+   "controls": {
+    "A": {
+     "hit": 0,
+     "client": 0,
+     "attn": 0,
+     "state": 0
+    },
+    "A_again": {
+     "hit": 1488,
+     "client": 1488,
+     "attn": 1488,
+     "state": 1488
+    },
+    "B": {
+     "hit": 0,
+     "client": 0,
+     "attn": 0,
+     "state": 0
+    }
+   },
+   "retention": 0.9851
+  },
+  {
+   "label": "G1_S_synth_kv3035_out256_seed3",
+   "n_sessions_seen": 16,
+   "n": 176,
+   "matched": 192,
+   "agree": 192,
+   "ambiguous": 0,
+   "hit": 561888,
+   "pred": 570368,
+   "zero": 2,
+   "short": 2,
+   "classes": {
+    "state_only": 2
+   },
+   "short_classes": {
+    "state_only": 2
+   },
+   "first32": {
+    "state_only": 2
+   },
+   "end": {
+    "free_queue": 191,
+    "gone": 1
+   },
+   "evict": {
+    "mamba": 2076,
+    "attn": 176
+   },
+   "controls": {
+    "A": {
+     "hit": 0,
+     "client": 0,
+     "attn": 0,
+     "state": 0
+    },
+    "A_again": {
+     "hit": 1488,
+     "client": 1488,
+     "attn": 1488,
+     "state": 1488
+    },
+    "B": {
+     "hit": 0,
+     "client": 0,
+     "attn": 0,
+     "state": 0
+    }
+   },
+   "retention": 0.9851
+  }
+ ]
+}

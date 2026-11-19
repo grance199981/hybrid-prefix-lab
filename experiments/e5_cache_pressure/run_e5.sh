@@ -25,9 +25,12 @@
 #
 # Inputs (environment):
 #   HP_ROOT, HP_ENV (venv with vllm), HP_QWEN35_DIR, HP_QWEN3_DIR, GATE_GPU_UUID
+#   (E12 configs also HP_QWEN35_9B_DIR, HP_GRANITE_H_DIR, HP_GRANITE_DIR)
 #   E5_CELLS "F0@11241 C1@3456 ...", E5_STAGE (S, I, L, W or K; goes into the tag),
 #   E5_WORKLOAD (synth, smith or wildchat), E5_MODE (closed or window),
-#   E5_INFLIGHT, E5_N_SESSIONS, E5_OUT_LENS "16 256"; synth also E5_TURNS, E5_P0, E5_STEP
+#   E5_INFLIGHT, E5_N_SESSIONS, E5_OUT_LENS "16 256"; synth also E5_TURNS, E5_P0, E5_STEP,
+#   E5_MIN_TURNS (2; 1 with E5_TURNS=1 gives single-turn prompts with no reuse)
+#   E5_CHECK (a correctness-check script run against each server before the replay), E5_CHECK_ARGS
 #   optional: E5_SEEDS (1 2 3), E5_LIVE, E5_MAX_LEN (16384), E5_THINKING (off),
 #   E5_PORT (8062), E5_MAX_NUM_SEQS, E5_KV_METRICS=1, E5_SERVE_EXTRA, E5_CPUSET,
 #   E5_EXPECT_REFUSE, E5_STOP_ON_FAIL (1), E5_STARTUP_TRIES (360),
@@ -76,15 +79,15 @@ URL="http://127.0.0.1:$PORT"
 STOP_ON_FAIL="${E5_STOP_ON_FAIL:-1}"
 
 case "$WORKLOAD" in
-  synth)    WL_ARGS=(--turns "${E5_TURNS:?}" --p0 "${E5_P0:?}" --step "${E5_STEP:?}") ;;
+  synth)    WL_ARGS=(--turns "${E5_TURNS:?}" --p0 "${E5_P0:?}" --step "${E5_STEP:?}" --min-turns "${E5_MIN_TURNS:-2}") ;;
   smith)    WL_ARGS=(--path "$ROOT/data/swe-smith-trajectories/data/tool-00004-of-00008.parquet" --thinking "$THINKING") ;;
   wildchat) WL_ARGS=(--path "$ROOT/data/wildchat-1m/data/train-00008-of-00014.parquet" --thinking "$THINKING") ;;
   *) echo "unknown workload $WORKLOAD"; exit 2 ;;
 esac
 for CELL in $CELLS $EXPECT_REFUSE; do
   case "$CELL" in
-    F0@*|C0@*|C1@*) ;;
-    *) echo "bad cell $CELL (want CFG@KVMIB with CFG in F0 C0 C1)"; exit 2 ;;
+    F0@*|C0@*|C1@*|N1@*|G0@*|G1@*) ;;
+    *) echo "bad cell $CELL (want CFG@KVMIB with CFG in F0 C0 C1 N1 G0 G1)"; exit 2 ;;
   esac
   case "${CELL#*@}" in ''|*[!0-9]*) echo "bad pool size in $CELL (MiB, digits only)"; exit 2 ;; esac
 done
@@ -126,7 +129,15 @@ for CELL in $CELLS; do
     F0) MODEL="$QWEN3_DIR"; NAME=qwen3; PARSER=hermes; ARCH=fa64; EXTRA=() ;;
     C0) MODEL="$QWEN35_DIR"; NAME=qwen35; PARSER=qwen3_xml; ARCH=hy576; EXTRA=(--language-model-only) ;;
     C1) MODEL="$QWEN35_DIR"; NAME=qwen35; PARSER=qwen3_xml; ARCH=hy16; EXTRA=(--language-model-only --prefix-match-unit 16) ;;
+    # E12: N1 is Qwen3.5-9B set up as C1. G1 / G0 are IBM Granite 4.0 micro, the hybrid (Mamba2) model with
+    # unit 16 as C1 and its full-attention sibling as F0. Granite takes no reasoning or tool parser: the
+    # synthetic workload sends token ids only.
+    N1) MODEL="${HP_QWEN35_9B_DIR:?}"; NAME=qwen35; PARSER=qwen3_xml; ARCH=hy16; EXTRA=(--language-model-only --prefix-match-unit 16) ;;
+    G1) MODEL="${HP_GRANITE_H_DIR:?}"; NAME=granite; PARSER=""; ARCH=hy16; EXTRA=(--prefix-match-unit 16) ;;
+    G0) MODEL="${HP_GRANITE_DIR:?}"; NAME=granite; PARSER=""; ARCH=fa64; EXTRA=() ;;
   esac
+  PARSE_OPTS=()
+  [ -n "$PARSER" ] && PARSE_OPTS=(--reasoning-parser qwen3 --enable-auto-tool-choice --tool-call-parser "$PARSER")
   REFUSE=0
   case " $EXPECT_REFUSE " in *" $CELL "*) REFUSE=1 ;; esac
 
@@ -143,7 +154,7 @@ for CELL in $CELLS; do
   CMD=(${PIN[@]+"${PIN[@]}"} "$VLLM" serve "$MODEL" --served-model-name "$NAME" --host 127.0.0.1 --port "$PORT"
        --dtype bfloat16 --max-model-len "$MAX_LEN" --kv-cache-memory-bytes "$((KVMIB * 1048576))"
        --enable-prefix-caching --enable-prompt-tokens-details --generation-config vllm --seed 0
-       --reasoning-parser qwen3 --enable-auto-tool-choice --tool-call-parser "$PARSER"
+       ${PARSE_OPTS[@]+"${PARSE_OPTS[@]}"}
        ${EXTRA[@]+"${EXTRA[@]}"} ${SERVER_OPTS[@]+"${SERVER_OPTS[@]}"})
   log "$ID command: CUDA_VISIBLE_DEVICES=$GPU_UUID ${CMD[*]}"
   CUDA_VISIBLE_DEVICES="$GPU_UUID" "${CMD[@]}" > "$LOG" 2>&1 &
@@ -167,6 +178,13 @@ for CELL in $CELLS; do
   grep -i -E "block size|GDN prefill kernel|GPU KV cache size|prefix_match_unit|num_gpu_blocks|Maximum concurrency" "$LOG" \
     | cut -c1-300 | head -n 30 > "$RUN_DIR/serve_${ID}_facts.txt"
   nvidia-smi --query-compute-apps=gpu_uuid,pid,used_memory --format=csv,noheader > "$RUN_DIR/nvidia_smi_$ID.txt"
+  # E5_CHECK (default off): a correctness check run against this server before the replay, e.g.
+  # experiments/e7_upstream_prs/check_cache_correctness.py; E5_CHECK_ARGS are passed on.
+  if [ -n "${E5_CHECK:-}" ]; then
+    ${PIN[@]+"${PIN[@]}"} "$PY" -I "$E5_CHECK" --url "$URL" --model "$NAME" --tokenizer-dir "$MODEL" \
+      --json "$OUT/check_${ID}.json" ${E5_CHECK_ARGS:-} > "$OUT/check_${ID}.log" 2>&1
+    log "$ID correctness check rc=$? $(tail -n 1 "$OUT/check_${ID}.log" | cut -c1-200)"
+  fi
   if [ $REFUSE -eq 1 ]; then
     log "$ID came up although it was expected to refuse; no requests sent"
     stop_server; STATUS=1; sleep 10

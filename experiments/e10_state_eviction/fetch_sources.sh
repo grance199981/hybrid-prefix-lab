@@ -5,7 +5,7 @@
 # Usage: fetch_sources.sh <out_dir>
 set -u
 OUT="$1"
-OURS=1479deb0392f1e7d2a69399e4150202284c24509
+OURS=${OURS:-1479deb0392f1e7d2a69399e4150202284c24509}   # E12 C sets OURS to current main
 BASE=44f0ddfd7b                                   # base of PR #61282 (gh api pulls/61282 .base.sha)
 THEIRS=5ce4f6c47233bca2d1f1fe02f6fd2f6591e8aed5   # head of PR #61282, checked 2026-11-18
 PR_FILES="vllm/v1/core/kv_cache_coordinator.py vllm/v1/core/single_type_kv_cache_manager.py"

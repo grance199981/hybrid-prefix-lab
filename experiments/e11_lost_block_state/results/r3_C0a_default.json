@@ -1,0 +1,21 @@
+{
+ "cfg": "C0a",
+ "unit": 576,
+ "budget": 2048,
+ "same_rule": false,
+ "requests_k_gt_0": 3161,
+ "measured_lower_with_pr": 0,
+ "predicted_lower_with_pr": 0,
+ "in_both": 0,
+ "predicted_only": 0,
+ "measured_only": 0,
+ "measured_lower_with_both_hits_exact": 0,
+ "exact_hit_predictions": {
+  "base": 3161,
+  "pr": 3161
+ },
+ "mismatches_examples": {
+  "base": [],
+  "pr": []
+ }
+}
